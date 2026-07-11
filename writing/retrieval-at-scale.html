@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Retrieval at scale: what breaks when your OpenSearch index grows</title>
+<meta name="description" content="A field guide to the failure modes that show up as OpenSearch retrieval indexes grow — sharding, mappings, deep pagination, vector memory, and relevance drift." />
+<style>
+  :root{--ink:#141922;--muted:#5b6472;--line:#e6e9ef;--accent:#2f6df6;--soft:#f6f8fb;--neon:#12b886}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  header{border-bottom:1px solid var(--line);padding:16px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center}
+  header .brand{font-weight:800}
+  .draft{display:inline-block;background:#fff4e0;color:#a15c00;border:1px solid #ffd591;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600;letter-spacing:.5px}
+  article{padding:46px 0 70px}
+  h1{font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-.5px;margin:14px 0 10px}
+  .meta{color:var(--muted);font-size:14px;margin-bottom:26px}
+  h2{font-size:20px;margin:34px 0 10px;letter-spacing:-.2px}
+  h2 .n{color:var(--accent);font-variant-numeric:tabular-nums}
+  p{margin:12px 0;font-size:17px}
+  ul{margin:12px 0 12px 22px}li{margin:6px 0}
+  .lead{font-size:19px;color:#2b323d}
+  blockquote{border-left:3px solid var(--neon);background:var(--soft);margin:18px 0;padding:12px 16px;color:#2b323d;border-radius:0 8px 8px 0}
+  code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:14px}
+  .tldr{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:24px 0}
+  .tldr b{display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;font-size:12px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="../index.html">← Vanessa Lopes</a>
+    <span class="draft">Draft</span>
+  </div>
+</header>
+
+<article>
+  <div class="wrap">
+    <div class="meta">Notes · retrieval &amp; search</div>
+    <h1>Retrieval at scale: what breaks when your OpenSearch index grows</h1>
+    <p class="meta">A working draft — field notes on the failure modes that appear as an index goes from thousands to hundreds of millions of documents.</p>
+
+    <p class="lead">Small OpenSearch indexes are forgiving. You can ignore sharding, let mappings grow, paginate naively, and everything still returns in a few milliseconds. Scale changes that — and the failures rarely show up where you expect. They hide in the p99, in heap pressure, and in slowly rotting relevance. Here's the short list of what actually breaks, and the levers that fix each one.</p>
+
+    <div class="tldr">
+      <b>TL;DR</b>
+      Size shards deliberately (tens of GB, not thousands of tiny ones). Keep mappings lean. Never deep-paginate — use <code>search_after</code>/PIT. Budget RAM for vector graphs before you turn on kNN. Separate indexing pressure from query latency. And measure relevance on a fixed eval set, because it drifts as the corpus grows.
+    </div>
+
+    <h2><span class="n">1.</span> Shards: too many small ones, or too few huge ones</h2>
+    <p>Every shard is a Lucene index with fixed overhead — file handles, memory, and per-query coordination cost. Oversharding (a common default when you create indexes per day/tenant) means a single query fans out to hundreds of shards and pays coordination tax on every request. Undersharding means individual shards grow past the point where merges and recovery are painful.</p>
+    <ul>
+      <li>Aim for shards in the <strong>tens of GB</strong> (a widely-used rule of thumb is ~10–50 GB), not hundreds of MB.</li>
+      <li>Watch total shard <em>count</em> per node — thousands of tiny shards is a heap and scheduling problem on its own.</li>
+      <li>Use rollover (ISM) so time-series indexes roll at a size/age target instead of accumulating.</li>
+    </ul>
+
+    <h2><span class="n">2.</span> Mapping explosion and field cardinality</h2>
+    <p>Dynamic mapping is a trap at scale: unbounded keys (user-supplied JSON, event payloads) quietly create thousands of fields, and every field costs memory in the cluster state and slows mapping updates. High-cardinality <code>keyword</code> fields also inflate global ordinals and aggregation cost.</p>
+    <ul>
+      <li>Turn off dynamic mapping (or set <code>strict</code>) on anything ingesting arbitrary JSON.</li>
+      <li>Model variable attributes as <code>flattened</code> fields instead of first-class ones.</li>
+      <li>Index only what you query; store the rest without indexing.</li>
+    </ul>
+
+    <h2><span class="n">3.</span> Deep pagination</h2>
+    <p><code>from + size</code> is fine for page 2 and catastrophic for page 2,000: each shard has to build and sort a result set of <code>from + size</code> before discarding almost all of it. At scale this is the classic OOM / latency spike.</p>
+    <blockquote>Rule: if a user can page past a few hundred results, you don't want <code>from/size</code> — you want <code>search_after</code> with a Point-in-Time (PIT), or the scroll API for exports.</blockquote>
+
+    <h2><span class="n">4.</span> Vector/kNN memory is the quiet budget-killer</h2>
+    <p>Turning on kNN (HNSW) changes your capacity math. The graph lives in memory, and its footprint scales with the number of vectors, their dimensionality, and the graph parameters (<code>m</code>, <code>ef_construction</code>). Teams enable semantic search on a whim and are surprised when nodes start swapping or off-heap memory blows past the container limit.</p>
+    <ul>
+      <li>Estimate graph RAM <em>before</em> enabling it: roughly proportional to <code>num_vectors × dim × 4 bytes × (1 + m-overhead)</code>.</li>
+      <li>Consider quantization (byte/PQ) to cut the footprint, and tune <code>ef_search</code> for the recall/latency point you actually need.</li>
+      <li>Segment merges rebuild graphs — expect CPU and memory spikes during heavy indexing.</li>
+    </ul>
+
+    <h2><span class="n">5.</span> Indexing pressure vs. query latency</h2>
+    <p>The two workloads fight. A tiny <code>refresh_interval</code> makes documents searchable fast but multiplies segment churn and merge load, which shows up as query-latency tails. Heavy bulk indexing during peak read traffic is how a healthy cluster suddenly posts a bad p99.</p>
+    <ul>
+      <li>Raise <code>refresh_interval</code> (or refresh on demand) for write-heavy pipelines that don't need second-fresh reads.</li>
+      <li>Separate hot indexing from serving where you can; throttle bulk during peak.</li>
+      <li>Track merge activity and segment count — they're leading indicators of latency trouble.</li>
+    </ul>
+
+    <h2><span class="n">6.</span> Hybrid search &amp; rerank cost</h2>
+    <p>Combining BM25 with vector similarity (hybrid) usually wins on relevance, but naive score fusion breaks because the two score distributions aren't comparable. And bolting a cross-encoder reranker on top adds real latency and cost per query.</p>
+    <ul>
+      <li>Normalize before you fuse (min-max or RRF) — don't add raw BM25 and cosine scores.</li>
+      <li>Rerank only the top-k candidates, and set k from a measured latency budget, not a guess.</li>
+      <li>Track <em>tokens (or ms) per resolved query</em> as a first-class cost metric.</li>
+    </ul>
+
+    <h2><span class="n">7.</span> Relevance drifts as the corpus grows</h2>
+    <p>The most insidious failure isn't an error — it's quality quietly degrading. Queries that returned the right doc at 1M documents return near-duplicates or stale content at 100M, and nobody notices until users complain.</p>
+    <ul>
+      <li>Keep a <strong>fixed evaluation set</strong> of query → expected-result pairs and score it on every meaningful change.</li>
+      <li>Watch nDCG/recall@k over time, not just latency dashboards.</li>
+      <li>Re-tune analyzers, boosts, and rerank thresholds as the distribution shifts.</li>
+    </ul>
+
+    <h2>The through-line</h2>
+    <p>Almost every one of these is the same lesson in a different costume: <strong>at scale, defaults optimize for the small case</strong>. The fix is to make the trade-offs explicit — a shard-size target, a mapping policy, a pagination contract, a memory budget for vectors, a latency budget for rerank, and a standing relevance eval. Instrument those early and the "mysterious" scaling failures mostly stop being mysterious.</p>
+
+    <p class="meta" style="margin-top:28px">This is a living draft — corrections and war stories welcome.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap"><a href="../index.html">← Back to home</a> · © 2026 Vanessa Lopes</div>
+</footer>
+</body>
+</html>
