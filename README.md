@@ -18,20 +18,23 @@ In `index.html`, search for `EDIT` and fill in:
 
 ## Publish on GitHub Pages (public, free)
 
-**Option A — personal site at `https://vanessasml.github.io/` (recommended):**
-1. Create a public repo named exactly **`vanessasml.github.io`**.
-2. Put the contents of this folder (index.html, dashboard.html) in the repo root.
+Hosted as its own repo so your existing pages stay untouched — served at
+**`https://vanessasml.github.io/portfolio/`**.
+
+1. On GitHub, create a new **public** repo named **`portfolio`** — do NOT add a README (an auto-README causes push conflicts).
+2. From this folder, point at the new repo and push:
    ```
    cd portfolio-site
-   git init && git add . && git commit -m "Personal site"
+   git init                                   # skip if already a repo
+   git add . && git commit -m "Portfolio site"
    git branch -M main
-   git remote add origin https://github.com/vanessasml/vanessasml.github.io.git
+   git remote set-url origin https://github.com/vanessasml/portfolio.git  # or 'git remote add origin ...' if none
    git push -u origin main
    ```
 3. Repo → Settings → Pages → Source: *Deploy from a branch* → Branch `main` / `/ (root)` → Save.
-4. Live in ~1 minute at **`https://vanessasml.github.io/`** — dashboard at **`/dashboard.html`**.
+4. Live in ~1 minute at **`https://vanessasml.github.io/portfolio/`** — dashboard at **`/portfolio/dashboard.html`**.
 
-**Option B — project repo:** name it anything (e.g. `site`), push, enable Pages → served at `https://vanessasml.github.io/site/`.
+> If the push is rejected ("remote contains work…"), the repo wasn't empty. Either recreate it without a README, or run `git pull origin main --allow-unrelated-histories` then push.
 
 ## Keeping the dashboard fresh
 `dashboard.html` is a copy of `how-ai-you-doing-week.html` from your ai-work folder. Each week, after the Monday build, copy the new file over and push:
