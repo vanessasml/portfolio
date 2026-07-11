@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ┌─────────────────────────────────────────────────────────────┐
+  │  EDIT THESE (search for EDIT): name, tagline, social links,   │
+  │  project links, writing links. Everything else is styling.    │
+  └─────────────────────────────────────────────────────────────┘
+-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vanessa Lopes — ML Engineer · Retrieval &amp; Agentic Systems</title>
+<meta name="description" content="Senior ML engineer building production retrieval engines (OpenSearch) and agentic chat. Writing, tools, and the weekly How AI you doing? debrief." />
+<style>
+  :root{
+    --bg:#ffffff; --soft:#f5f7fa; --line:#e6e9ef; --ink:#131720; --muted:#5b6472;
+    --accent:#2f6df6; --neon:#12b886; --term:#04140d; --termline:#175c3c; --termneon:#33ff9e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:22px}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:10;background:#ffffffcc;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  nav .brand{font-weight:800;letter-spacing:.3px}
+  nav .links a{color:var(--ink);font-size:14px;margin-left:18px}
+  nav .links a:hover{color:var(--accent);text-decoration:none}
+  @media(max-width:620px){nav .links a{margin-left:12px;font-size:13px}}
+
+  /* Hero */
+  .hero{padding:70px 0 56px;border-top:none}
+  .hero .eyebrow{color:var(--accent);font-weight:700;letter-spacing:1px;font-size:13px;text-transform:uppercase}
+  .hero h1{font-size:clamp(30px,5.5vw,50px);line-height:1.1;letter-spacing:-1px;margin:12px 0 14px}
+  .hero p.lead{font-size:19px;color:#2b323d;max-width:640px}
+  .hero .cta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:10px 16px;border-radius:9px;font-size:14px;font-weight:600;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.primary:hover{text-decoration:none;filter:brightness(1.05)}
+  .btn.ghost:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+  .tags{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+  .tag{font-size:12.5px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+
+  /* Cards */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:620px){.grid{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;background:var(--bg);transition:.15s}
+  .card:hover{border-color:var(--accent);box-shadow:0 6px 22px rgba(47,109,246,.08)}
+  .card h3{font-size:17px;margin-bottom:6px}
+  .card .k{font-size:12px;color:var(--neon);font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+  .card p{color:var(--muted);font-size:14px;margin:8px 0 12px}
+  .card .links a{font-size:13px;margin-right:14px}
+
+  /* Writing list */
+  .posts{list-style:none}
+  .posts li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .posts li:last-child{border-bottom:none}
+  .posts a{font-weight:600;color:var(--ink)}
+  .posts a:hover{color:var(--accent)}
+  .posts .date{color:var(--muted);font-size:13px;white-space:nowrap}
+
+  /* This-week terminal feature */
+  .feature{background:var(--term);border-top:1px solid var(--termline);border-bottom:1px solid var(--termline)}
+  .feature .wrap{padding:52px 22px}
+  .feature h2{color:var(--termneon)}
+  .feature .fh{font-family:"Courier New",monospace;color:var(--termneon);font-size:clamp(24px,4vw,36px);font-weight:800;letter-spacing:2px;text-shadow:0 0 10px rgba(51,255,158,.5)}
+  .feature p{color:#bfe9d4;max-width:620px;margin:12px 0 20px}
+  .feature .btn{border-color:var(--termline);color:var(--termneon)}
+  .feature .btn.primary{background:var(--termneon);color:#04140d;border-color:var(--termneon)}
+  .feature .desks{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .feature .desk{font-family:"Courier New",monospace;font-size:12px;color:#bfe9d4;border:1px solid var(--termline);border-radius:6px;padding:4px 10px}
+
+  footer{background:var(--soft)}
+  footer .wrap{padding:40px 22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  footer .muted{color:var(--muted);font-size:13px}
+  .social a{margin-left:14px;font-size:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Vanessa&nbsp;Lopes</div><!-- EDIT: name -->
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#thisweek">This&nbsp;Week</a>
+      <a href="#writing">Writing</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Senior ML Engineer</div>
+    <!-- EDIT: headline + lead -->
+    <h1>Production retrieval &amp; agentic systems — built for the real world.</h1>
+    <p class="lead">I build retrieval engines on OpenSearch (small to large-scale indexes) and agentic chat, and I care about what actually holds up when it reaches production — latency, cost, and reliability, not demos.</p>
+    <div class="cta">
+      <a class="btn primary" href="#thisweek">See what I'm tracking this week →</a>
+      <a class="btn ghost" href="#projects">View projects</a>
+    </div>
+    <div class="tags">
+      <span class="tag">Retrieval / RAG</span>
+      <span class="tag">OpenSearch &amp; hybrid search</span>
+      <span class="tag">Agentic chat</span>
+      <span class="tag">RLHF / fine-tuning</span>
+      <span class="tag">LLM evals</span>
+      <span class="tag">Production ML</span>
+      <span class="tag">AI strategy</span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT / NOW -->
+<section id="about">
+  <div class="wrap">
+    <h2>About · Now</h2>
+    <p style="max-width:680px;font-size:16px">
+      I'm a senior ML engineer focused on <strong>retrieval</strong> and <strong>agentic chat</strong> — designing search/RAG systems that stay fast and accurate as indexes grow, and building assistants that are reliable enough to trust in production. I also work on shaping <strong>AI strategy</strong>: helping teams pick the use-cases that survive contact with real users.
+    </p>
+    <p style="max-width:680px;font-size:16px;margin-top:14px;color:var(--muted)">
+      <strong style="color:var(--ink)">Right now:</strong> scaling OpenSearch retrieval, sharpening hybrid-search + rerank pipelines, and producing <em>How AI you doing?</em> — a weekly debrief on real production AI use-cases and their limits.
+    </p>
+    <p style="max-width:680px;font-size:16px;margin-top:14px;color:var(--muted)">
+      <strong style="color:var(--ink)">Background:</strong> RLHF and domain LLMs — I've published cyber-risk Llama fine-tunes and a 32k security instruction dataset on Hugging Face, and written on preference-optimization fine-tuning (DPO/ORPO).
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS & TOOLS -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects &amp; Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="k">Live weekly product</div>
+        <h3>How AI you doing?</h3>
+        <p>A self-updating weekly debrief of AI-engineering developments — retrieval, agents, and production war stories — with Hacker-News comment summaries and an episode slate. Built with a research pipeline + retro terminal dashboard.</p>
+        <div class="links"><a href="dashboard.html">Open dashboard →</a> <a href="#thisweek">About</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Published model · 16★</div>
+        <h3>cyber-risk-llama-3-8b</h3>
+        <p>A Llama-3-8B model fine-tuned for cyber-risk analysis — one of my most-used releases on Hugging Face (16 likes, ~91 downloads).</p>
+        <div class="links"><a href="https://huggingface.co/Vanessasml/cyber-risk-llama-3-8b" target="_blank" rel="noopener">Model card →</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Dataset · 299 downloads</div>
+        <h3>Cybersecurity 32k instruction set</h3>
+        <p>A 32k instruction/input/output dataset for training security-focused LLMs — widely reused by the community.</p>
+        <div class="links"><a href="https://huggingface.co/datasets/Vanessasml/cybersecurity_32k_instruction_input_output" target="_blank" rel="noopener">Dataset →</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Fine-tuning / RLHF</div>
+        <h3>Llama-3 text-improver fine-tunes</h3>
+        <p>SFT + LoRA/QLoRA fine-tunes of Llama-3.1/3.2 with preference-optimization techniques (DPO/ORPO). Published on Hugging Face.</p>
+        <div class="links"><a href="https://huggingface.co/Vanessasml/models" target="_blank" rel="noopener">All models →</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Retrieval · current</div>
+        <h3>OpenSearch retrieval toolkit</h3><!-- EDIT: add real repo link -->
+        <p>Utilities for building and tuning OpenSearch indexes at scale — hybrid search, rerankers, and relevance evaluation.</p>
+        <div class="links"><a href="https://github.com/vanessasml" target="_blank" rel="noopener">GitHub →</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Playbook</div>
+        <h3>AI-engineering playbook</h3>
+        <p>Practical tactics for shipping with AI: cutting token cost, speeding feature dev, and the skills worth adding to a project. Part of the weekly dashboard.</p>
+        <div class="links"><a href="dashboard.html">Read the Playbook →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THIS WEEK (terminal feature) -->
+<section id="thisweek" class="feature" style="border-top:1px solid var(--termline);padding:0">
+  <div class="wrap">
+    <h2>This week in AI</h2>
+    <div class="fh">HOW AI YOU DOING?</div>
+    <p>A live, weekly dashboard digesting arXiv, engineering blogs, GitHub, and Hacker News — organized into a Retrieval desk, Agents-in-Production desk, and War Stories, plus a morning brief, strategy signals, and a podcast episode slate. Refreshed every Monday.</p>
+    <a class="btn primary" href="dashboard.html">Open this week's dashboard →</a>
+    <a class="btn" href="#contact" style="margin-left:8px">Subscribe</a>
+    <div class="desks">
+      <span class="desk">◉ Morning Brief</span>
+      <span class="desk">⌕ Retrieval Desk</span>
+      <span class="desk">⛓ Agents in Prod</span>
+      <span class="desk">⚠ War Stories</span>
+      <span class="desk">↗ Strategy Signals</span>
+      <span class="desk">◇ Podcast Studio</span>
+    </div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section id="writing">
+  <div class="wrap">
+    <h2>Writing</h2>
+    <!-- EDIT: replace with real posts / links -->
+    <ul class="posts">
+      <li><a href="https://huggingface.co/blog/Vanessasml/llm-finetuning-techniques-dpo-orpo" target="_blank" rel="noopener">LLM Finetuning Techniques: DPO &amp; ORPO</a><span class="date">Hugging Face</span></li>
+      <li><a href="https://huggingface.co/Vanessasml/activity/articles" target="_blank" rel="noopener">Can RLHF with Preference Optimization Help LLMs Surpass GPT-4-Quality Models?</a><span class="date">Hugging Face</span></li>
+      <li><a href="#">Semantic &amp; hybrid search + reranking: improvements that move the needle</a><span class="date">In draft</span></li>
+      <li><a href="#">Retrieval at scale: what breaks when your OpenSearch index grows</a><span class="date">Draft</span></li>
+    </ul>
+    <p style="color:var(--muted);font-size:14px;margin-top:14px">Turn a war-story or a retrieval lesson into a post each month — it compounds into visibility.</p>
+  </div>
+</section>
+
+<!-- SPEAKING & PODCAST -->
+<section id="speaking">
+  <div class="wrap">
+    <h2>Speaking &amp; Podcast</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="k">Podcast</div>
+        <h3>How AI you doing?</h3>
+        <p>Weekly conversations on real, applicable AI use-cases and their limits at production scale — architecture war stories and usable engineering workflows.</p>
+        <div class="links"><a href="dashboard.html">This week's slate →</a> <a href="#">Listen</a></div>
+      </div>
+      <div class="card">
+        <div class="k">Conferences</div>
+        <h3>Speaking</h3>
+        <p><strong>The AI Summit London 2024</strong> — “Harnessing the Power of LLMs.” Plus ongoing collaboration with MLCon.</p>
+        <div class="links">
+          <a href="https://london.theaisummit.com/the-ai-summit-london-2024/harnessing-the-power-of-llms" target="_blank" rel="noopener">Session →</a>
+          <a href="https://www.youtube.com/watch?v=T_1KeTyjhTA" target="_blank" rel="noopener">Watch talk →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <div style="font-weight:800;margin-bottom:4px">Let's talk</div>
+      <div class="muted">Retrieval, agents, AI strategy, or the podcast — reach out.</div>
+    </div>
+    <div class="social">
+      <!-- EDIT: real links -->
+      <a href="mailto:vsofiaml@gmail.com">Email</a>
+      <a href="https://huggingface.co/Vanessasml" target="_blank" rel="noopener">Hugging&nbsp;Face</a>
+      <a href="https://github.com/vanessasml" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="muted" style="padding-bottom:20px">© 2026 Vanessa Lopes · built with GitHub Pages</div></div>
+</footer>
+
+</body>
+</html>
