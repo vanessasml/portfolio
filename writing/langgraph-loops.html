@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LangGraph in production: taming loops and cyclic agent flows</title>
+<meta name="description" content="A field guide to running cyclic LangGraph agents in production — termination, token budgets, state reducers, checkpointing, and observability." />
+<style>
+  :root{--ink:#141922;--muted:#5b6472;--line:#e6e9ef;--accent:#2f6df6;--soft:#f6f8fb;--neon:#12b886}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  header{border-bottom:1px solid var(--line);padding:16px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center}
+  header .brand{font-weight:800}
+  .draft{display:inline-block;background:#fff4e0;color:#a15c00;border:1px solid #ffd591;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600;letter-spacing:.5px}
+  article{padding:46px 0 70px}
+  h1{font-size:clamp(26px,4.5vw,38px);line-height:1.15;letter-spacing:-.5px;margin:14px 0 10px}
+  .meta{color:var(--muted);font-size:14px;margin-bottom:26px}
+  h2{font-size:20px;margin:34px 0 10px;letter-spacing:-.2px}
+  h2 .n{color:var(--accent);font-variant-numeric:tabular-nums}
+  p{margin:12px 0;font-size:17px}
+  ul{margin:12px 0 12px 22px}li{margin:6px 0}
+  .lead{font-size:19px;color:#2b323d}
+  blockquote{border-left:3px solid var(--neon);background:var(--soft);margin:18px 0;padding:12px 16px;color:#2b323d;border-radius:0 8px 8px 0}
+  code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:14px}
+  .tldr{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:24px 0}
+  .tldr b{display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;font-size:12px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="../index.html">← Vanessa Lopes</a>
+    <span class="draft">Draft</span>
+  </div>
+</header>
+
+<article>
+  <div class="wrap">
+    <div class="meta">Notes · agents</div>
+    <h1>LangGraph in production: taming loops and cyclic agent flows</h1>
+    <p class="meta">A working draft — how to keep cyclic agent graphs useful without letting them spin, stall, or burn your budget.</p>
+
+    <p class="lead">The whole reason to reach for LangGraph over a linear chain is the <em>cycle</em>: an agent that can reflect, retry, call a tool, and loop back with new information. That loop is the feature. It's also exactly what turns a working demo into a 3am incident — an agent that never decides it's done, re-queries the same tool forever, or quietly triples your token bill. Here's what it takes to run cyclic graphs in production.</p>
+
+    <div class="tldr">
+      <b>TL;DR</b>
+      Model loops as explicit nodes + conditional edges. Give every cycle a hard termination condition and a <code>recursion_limit</code>. Remember that <strong>every node and every subgraph adds latency on top of model time</strong> — parallelize and keep graphs shallow. Budget steps and tokens as first-class limits. Be deliberate about state reducers so message lists don't balloon. Checkpoint for resumability, and trace every transition — you can't debug a loop you can't see.
+    </div>
+
+    <h2><span class="n">1.</span> Make the loop explicit</h2>
+    <p>A LangGraph app is a <code>StateGraph</code> of nodes connected by edges; a loop is just an edge that points back to an earlier node. Keep those cycles intentional and small. The common shape — <em>agent → (tool? → agent) → end</em> — is a conditional edge that routes back to the agent only while there's more tool work to do.</p>
+    <ul>
+      <li>Route with a <strong>conditional edge</strong> function that inspects state and returns the next node (or <code>END</code>).</li>
+      <li>Keep the number of distinct cycle entry points small — one or two, not a web of back-edges.</li>
+      <li>If a subtask is really a DAG, don't force it into a loop; reserve cycles for genuine iterate-until-done work.</li>
+    </ul>
+
+    <h2><span class="n">2.</span> Every loop needs a way to stop</h2>
+    <p>The number-one production failure is a loop with no reliable exit. Never rely on the model alone to decide it's finished — encode termination in the graph.</p>
+    <blockquote>Belt <em>and</em> braces: a semantic "done" condition in your routing function, <strong>and</strong> a hard <code>recursion_limit</code> so the graph raises instead of looping forever.</blockquote>
+    <ul>
+      <li>Track an explicit <code>iterations</code> counter in state and stop at a ceiling.</li>
+      <li>Set <code>recursion_limit</code> on invocation as a safety net; handle the resulting error gracefully (return best-effort, don't crash the request).</li>
+      <li>Detect no-progress loops — same tool + same args as the previous step usually means "break."</li>
+    </ul>
+
+    <h2><span class="n">3.</span> Latency: every node — and every graph — adds up</h2>
+    <p>This is the trap people underestimate. Each node is a step the runtime schedules, and the orchestration overhead is real and measurable — <em>separate from</em> model time. Practitioners have reported a LangGraph tool-calling run around ~15s where the equivalent direct model call was ~5s, and there's an open issue about <a href="https://github.com/langchain-ai/langgraph/issues/3515" target="_blank" rel="noopener">nodes showing high latency unrelated to LLM execution</a> (see also this <a href="https://github.com/langchain-ai/langgraph/discussions/4595" target="_blank" rel="noopener">discussion of framework overhead vs. a direct call</a>). In a sequential graph this accumulates: N nodes is N hops of orchestration <em>on top of</em> N model calls.</p>
+    <blockquote>The danger multiplies when you compose <strong>multiple graphs</strong>: a supervisor over several subgraphs, or pipelines that chain graph-of-graphs. Coordination cost — and the debugging surface — grows fast, and beyond ~5 agents it grows roughly exponentially.</blockquote>
+    <ul>
+      <li><strong>Parallelize</strong> independent branches instead of chaining them, and run I/O-bound nodes <code>async</code> so tool calls overlap — the biggest lever on total latency. <a href="https://aipractitioner.substack.com/p/scaling-langgraph-agents-parallelization" target="_blank" rel="noopener">[scaling subgraphs &amp; map-reduce]</a></li>
+      <li><strong>Pre-warm the compiled graph</strong> — recompiling on every request adds ~70&nbsp;ms of cold-start you don't need to pay.</li>
+      <li><strong>Keep graphs shallow.</strong> Deeply nested conditional branches and highly interconnected nodes slow coordination; past ~5 agents, monitoring and debugging complexity explode. <a href="https://latenode.com/blog/ai-frameworks-technical-infrastructure/langgraph-multi-agent-orchestration/langgraph-multi-agent-orchestration-complete-framework-guide-architecture-analysis-2025" target="_blank" rel="noopener">[multi-agent architecture analysis]</a></li>
+      <li><strong>Trace per-node time</strong> to catch the "unobserved latency cascade" — orchestration overhead hides behind total latency until you measure each hop. <a href="https://aerospike.com/blog/langgraph-production-latency-replay-scale/" target="_blank" rel="noopener">[LangGraph in production: latency]</a></li>
+    </ul>
+
+    <h2><span class="n">4.</span> Budget cost and tokens like a limit, not a hope</h2>
+    <p>Each trip around the loop is another model call (and often another tool call). Costs are multiplicative in the number of iterations, so a small loop that "usually runs twice" can occasionally run twenty times on a hard input.</p>
+    <ul>
+      <li>Cap total tokens/steps per request and short-circuit when the budget is hit.</li>
+      <li>Keep the per-iteration prompt lean — don't resend the entire history every turn if you can summarize it.</li>
+      <li>Log tokens-per-completed-task, not just per-call, so runaway loops are visible in dashboards.</li>
+    </ul>
+
+    <h2><span class="n">5.</span> Be deliberate about state reducers</h2>
+    <p>LangGraph merges each node's output into shared state via <em>reducers</em>. The classic footgun is the message list: with an append reducer it grows every iteration, inflating context and cost until you hit the window. Decide, per field, whether a node should <strong>append</strong> or <strong>overwrite</strong>.</p>
+    <ul>
+      <li>Use append reducers for genuine history; overwrite for scratchpad/working fields.</li>
+      <li>Trim or summarize the message history inside the loop, not just at the end.</li>
+      <li>Keep large tool outputs out of the accumulating state — reference them, don't inline them every turn.</li>
+    </ul>
+
+    <h2><span class="n">6.</span> Checkpoint for resumability and human-in-the-loop</h2>
+    <p>Long cyclic runs fail — a tool times out, a rate limit hits, a human needs to approve a step. A checkpointer persists state at each super-step so you can resume instead of restarting, and it's what makes <em>interrupt-and-approve</em> workflows possible.</p>
+    <ul>
+      <li>Use a durable checkpointer (not in-memory) in production; key it by thread/session.</li>
+      <li>Design explicit interrupt points for approvals rather than blocking inside a node.</li>
+      <li>Make nodes idempotent where you can, so a resumed step doesn't double-execute side effects.</li>
+    </ul>
+
+    <h2><span class="n">7.</span> You can't debug a loop you can't see</h2>
+    <p>Cyclic behavior is opaque without tracing. Instrument every node transition so you can answer "why did it loop again?" after the fact.</p>
+    <ul>
+      <li>Emit a trace per super-step: node, routing decision, tokens, and a state diff.</li>
+      <li>Alert on iteration count and per-request cost crossing thresholds.</li>
+      <li>Capture the routing function's inputs — most "mystery loops" are a router returning the wrong branch.</li>
+    </ul>
+
+    <h2><span class="n">8.</span> Test the cycles, not just the happy path</h2>
+    <p>Unit-test routing functions directly with crafted states, and run the whole graph against deterministic (stubbed) tools so a loop's behavior is reproducible.</p>
+    <ul>
+      <li>Assert termination: every test graph must reach <code>END</code> within the step budget.</li>
+      <li>Add adversarial inputs that tempt the agent to loop (ambiguous tasks, flaky tools).</li>
+      <li>Snapshot-test state after each step to catch reducer regressions.</li>
+    </ul>
+
+    <h2>The through-line</h2>
+    <p>Loops are what make LangGraph worth using — and the discipline is to treat <strong>termination, budget, and observability as first-class parts of the graph</strong>, not afterthoughts. Design the exit conditions before the happy path, cap the cost, watch every transition, and the same cycles that cause 3am pages become the thing that makes your agents genuinely capable.</p>
+
+    <p class="meta" style="margin-top:28px">Living draft — corrections and production war stories welcome.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap"><a href="../index.html">← Back to home</a> · © 2026 Vanessa Lopes</div>
+</footer>
+</body>
+</html>
