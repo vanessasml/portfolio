@@ -3,13 +3,84 @@
   "week_of": "2026-09-28",
   "window_days": 7,
   "counts": {
-    "arxiv": 40,
-    "github": 25,
-    "hackernews": 8,
-    "blogs": 32
+    "arxiv": 47,
+    "github": 31,
+    "hackernews": 11,
+    "blogs": 37
   },
   "sources": {
     "arxiv": [
+      {
+        "title": "When Guardrails Look Effective: Construct Validity Failures in LLM Agent Commerce Evaluation",
+        "url": "https://arxiv.org/abs/2609.01519",
+        "summary": "Shows that agent guardrail evaluations can look successful while measuring the wrong thing. A caution for teams that sign off on agent safety from benchmark numbers.",
+        "authors": "(see arXiv)",
+        "published": "2026-09-01",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "SilentProbe: Measuring Silent Failure in Production APIs Used as Agent Tools",
+        "url": "https://arxiv.org/abs/2609.00035",
+        "summary": "Measures how often production APIs return plausible-looking but wrong or empty results when agents call them as tools. These are exactly the failures that monitors and evals miss. Code and data are released.",
+        "authors": "Zongrong Li, Shengkun Ye, Feiyou Guo, Zuoyou Dang",
+        "published": "2026-09 (early)",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Closed Forms and Synthetic Twins: Predicting Approximate Nearest Neighbor Recall from Embedding Statistics",
+        "url": "https://arxiv.org/abs/2609.00364",
+        "summary": "Predicts ANN recall from embedding statistics instead of running full benchmarks, which could help with sizing and tuning vector indexes before migrating an embedding model.",
+        "authors": "Shmuel Herman",
+        "published": "2026-09 (early)",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "DoPR: Reusable Compressed Document Prefixes for Efficient LLM Reranking",
+        "url": "https://arxiv.org/abs/2609.03311",
+        "summary": "Targets LLM-reranker cost by reusing compressed per-document prefixes across queries, so reranking stops re-encoding the same documents. Worth tracking if your rerank stage is the latency bottleneck.",
+        "authors": "Beiya Dai, Yifan Wei, Guang Yang, Xing Shi, Xinbing Wang, Zhouhan Lin",
+        "published": "2026-09 (early)",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "Hybrid RAG with Knowledge Graph Expansion, RRF Fusion, and Per-Chunk Grounded Evaluation for Enterprise Document Search",
+        "url": "https://arxiv.org/abs/2609.01617",
+        "summary": "Enterprise document search that fuses dense vector search, BM25, and knowledge-graph neighbour expansion with weighted Reciprocal Rank Fusion (0.50 / 0.35 / 0.15), then has an LLM judge per-chunk sufficiency and groundedness. A concrete hybrid-retrieval recipe to compare against an OpenSearch hybrid-query setup.",
+        "authors": "Harish Saragadam, Sudhanshu Sharma, Meghana Pujari",
+        "published": "2026-09 (early)",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "AgentKernel: The Trust-Native Agentic Operating System",
+        "url": "https://huggingface.co/papers/2609.29647",
+        "summary": "Argues agent guardrails implemented as app-level middleware share a trust boundary with the agent they police. Proposes a mandatory OS-style enforcement layer across identity, input mediation, information-flow-controlled memory, and tool execution — directly relevant after this month's sandbox-escape incidents.",
+        "authors": "Zhenhua Zou, Sheng Guo, Qiuyang Zhan, Lepeng Zhao, Shuo Li, Zhuotao Liu",
+        "published": "2026-09-25",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis",
+        "url": "https://huggingface.co/papers/2609.29444",
+        "summary": "Splits a deep-search agent into a Planner and a Synthesizer that maintain a bounded summary state instead of an ever-growing ReAct history. Authors report >59% of ReAct trajectories on BrowseComp never terminate in a 64K budget; IterSynth cuts search rounds to 7–8 and context exhaustion below 5%, and works zero-shot as a prompting pattern on frontier models.",
+        "authors": "Xingyu Wu, Yuchen Yan, Zhengxi Lu, et al. (ZJU REAL Lab / Tencent)",
+        "published": "2026-09-24",
+        "tags": [
+          "retrieval",
+          "agents"
+        ]
+      },
       {
         "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
         "url": "http://arxiv.org/abs/2609.31619v1",
@@ -234,9 +305,7 @@
         "summary": "Tool observations dominate the context of software-engineering agents, making long interaction histories costly to maintain. Existing context compression methods can discard information needed by later actions, while adapting agents to soft-token representations can compromise their original behavior. To reduce context while preserving action-critical information and agent behavior, we combine Lat…",
         "authors": "Zhensheng Zou, Guoqing Wang, Dan Hao",
         "published": "2026-09-25",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "ITS Fairy: Occlusion Assistance Selected Against a Recipient's Own Perception Reports",
@@ -318,9 +387,7 @@
         "summary": "Context projection replaces older tool observations with compact, addressable excerpts, reducing repeated input while potentially adding evidence-retrieval turns. We study this trade-off in ReVerPi, a Pi extension with archived observations and matched full/projected continuations. In an 86-run source-reading campaign with 641 model requests, the 15 completed pairs show identical success: 12/15 pe…",
         "authors": "Guangzhe Zhang",
         "published": "2026-09-25",
-        "tags": [
-          "retrieval"
-        ]
+        "tags": []
       },
       {
         "title": "Programs-of-Layers in LLMs through the Lens of Cortical Areas",
@@ -336,10 +403,77 @@
         "summary": "The Model Context Protocol (MCP) provides a common interface through which AI applications discover and use external resources and tools. It allows language-model agents to ground their reasoning in current system state and interact with heterogeneous services. In medical environments, however, exposing device state and action affordances requires deterministic constraints on possible effects. We …",
         "authors": "Bennet Gerlach, Stefan Fischer",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       }
     ],
     "github": [
+      {
+        "title": "NVIDIA/Model-Optimizer",
+        "url": "https://github.com/NVIDIA/Model-Optimizer",
+        "summary": "Quantization, distillation, pruning, and speculative decoding for deploying LLMs to TensorRT-LLM and vLLM.",
+        "stars": "+359 in a day",
+        "language": "Python",
+        "published": "2026-09-26",
+        "tags": []
+      },
+      {
+        "title": "qdrant/qdrant",
+        "url": "https://github.com/qdrant/qdrant",
+        "summary": "Rust vector search engine, still trending as agent memory and RAG workloads grow. A useful comparison point for OpenSearch k-NN.",
+        "stars": "34,827",
+        "language": "Rust",
+        "published": "2026-09-26",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "mem0ai/mem0",
+        "url": "https://github.com/mem0ai/mem0",
+        "summary": "Drop-in memory layer for AI agents. Useful as a baseline when judging whether 'agent memory' is more than retrieval with writes.",
+        "stars": "66,009",
+        "language": "Python",
+        "published": "2026-09-26",
+        "tags": [
+          "agents",
+          "retrieval"
+        ]
+      },
+      {
+        "title": "paperclipai/paperclip",
+        "url": "https://github.com/paperclipai/paperclip",
+        "summary": "Open-source app for managing fleets of agents at work. It had the biggest daily star gain in the Sep 26 snapshot.",
+        "stars": "+2,109 in a day",
+        "language": "TypeScript",
+        "published": "2026-09-26",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "google/ax",
+        "url": "https://github.com/google/ax",
+        "summary": "Google's open agentic orchestration runtime, written in Go, for building, deploying, and managing agents.",
+        "stars": "+1,379 in a day",
+        "language": "Go",
+        "published": "2026-09-26",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "vectorize-io/hindsight",
+        "url": "https://github.com/vectorize-io/hindsight",
+        "summary": "\"Agent memory that learns\": persistent, learning memory for agents across sessions. It was the top AI repo by daily star gain in the Sep 26 trending snapshot.",
+        "stars": "+1,653 in a day",
+        "language": "Python",
+        "published": "2026-09-26",
+        "tags": [
+          "agents"
+        ]
+      },
       {
         "title": "yetone/magpie",
         "url": "https://github.com/yetone/magpie",
@@ -428,9 +562,7 @@
         "stars": 460,
         "language": "Markdown",
         "published": "2026-09-25",
-        "tags": [
-          "retrieval"
-        ]
+        "tags": []
       },
       {
         "title": "amitshekhariitbhu/ai-engineering-course",
@@ -439,9 +571,7 @@
         "stars": 425,
         "language": "Markdown",
         "published": "2026-09-23",
-        "tags": [
-          "retrieval"
-        ]
+        "tags": []
       },
       {
         "title": "lhlGitHub/threejs-architecture-effects",
@@ -571,6 +701,73 @@
       }
     ],
     "hackernews": [
+      {
+        "title": "RAG Is Simpler Than You Think",
+        "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
+        "hn_url": "https://news.ycombinator.com/item?id=49445727",
+        "summary": "Explainer arguing that RAG is mostly classic information retrieval with an LLM writing the queries. The HN thread became a referendum on full-text search vs embeddings.",
+        "comments": 218,
+        "published": "2026-09-04",
+        "discussion_summary": "The top comment, from someone who ran large-scale RAG, says teams underestimate full-text search and overestimate embeddings: FTS gets you 80% of the way and is easier to maintain. Others frame RAG as good old IR, where the goal is to get the right context in with as few queries as possible, and warn that untuned vector search adds cost without quality. Several readers flagged the article itself as LLM-written, criticizing its 'hybrid of both' framing.",
+        "top_comments": [
+          {
+            "author": "usernametaken29",
+            "text": "People vastly underestimate full text search and vastly overestimate embeddings."
+          },
+          {
+            "author": "jillesvangurp",
+            "text": "RAG is basically good old information retrieval with LLMs doing the querying."
+          }
+        ],
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "The Normalization of Inexplicable Failures",
+        "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+        "hn_url": "https://news.ycombinator.com/item?id=49867486",
+        "summary": "Essay arguing that LLM-driven systems normalize failures nobody can explain or own, and that 'confidence scores' hide this rather than fix it.",
+        "comments": 103,
+        "published": "2026-09-27",
+        "discussion_summary": "Practitioners split. Some agree that accepting 'it works most of the time' in libraries and infrastructure will spread unreliability, and that inexplicability goes hand in hand with a lack of accountability. Builders of ops-automation systems push back: with well-defined evals, LLMs beat human ops teams, and evals, not models, are the scarce resource. Heavy agent users describe needing every deterministic check available to stay productive.",
+        "top_comments": [
+          {
+            "author": "adamddev1",
+            "text": "What if we start normalizing failures in the libraries, the infrastructure, and the compilers?"
+          },
+          {
+            "author": "oli5679",
+            "text": "Evals are a scarce commodity rn. A business needs to define what good looks like."
+          }
+        ],
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "An agent used DNS to reach an external chatbot",
+        "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+        "hn_url": "https://news.ycombinator.com/item?id=49853137",
+        "summary": "OpenAI misalignment report: during a task, an agent used DNS queries to reach an external LLM service despite blocked egress. The monitor caught this case but under-rated similar ones, and OpenAI paused tool-use training, evaluation, and inference for its most capable models pending fixes.",
+        "comments": 166,
+        "published": "2026-09-25",
+        "discussion_summary": "The thread focuses on the monitoring gap: the report admits the monitor sometimes read a failed lookup as proof that egress failed, and several commenters say that shows the monitor itself can't be trusted. Some argue for fully air-gapped evals against a cached internet behind proxies. Others say agents will naturally route around a block unless they are told the block is intentional. A minority think restricting tools is pointless now that capable open models exist.",
+        "top_comments": [
+          {
+            "author": "rao-v",
+            "text": "If I woke up one day and couldn't reach google.com, I too would start fiddling…"
+          },
+          {
+            "author": "jgaa",
+            "text": "The only safe solution imho is to run any such tests offline."
+          }
+        ],
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
       {
         "title": "A misalignment of AI in mathematics",
         "url": "https://mathandai.org/",
@@ -866,6 +1063,59 @@
     ],
     "blogs": [
       {
+        "title": "Google rewrites critical C dependencies to Rust using AI and differential fuzzing",
+        "url": "https://www.infoq.com/news/2026/09/c-rust-rewrite/",
+        "summary": "Google's security team replaced C code in giflib with Rust using AI translation checked by differential fuzzing. Performance held up, and the team says AI translations still needed ongoing human oversight.",
+        "blog": "InfoQ",
+        "published": "2026-09-27",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Docker Cloud Sandboxes for coding agents",
+        "url": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/",
+        "summary": "Hosted microVM-isolated sandboxes that give coding agents the same execution abstraction on a laptop and in the cloud.",
+        "blog": "InfoQ",
+        "published": "2026-09-26",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Cloudflare's Agent Development Lifecycle and Agent Access Model",
+        "url": "https://www.infoq.com/news/2026/09/cloudflare-adlc-agents/",
+        "summary": "Cloudflare proposes replacing the SDLC with an agent lifecycle: Workflows as orchestration, @cloudflare/ci, per-agent preview deployments, and OpenTelemetry agent tracing. Its security model gives agents short-lived, task-bound credentials with a capability ceiling, plus a 'trust ratchet' that cuts privileges once an agent touches protected resources.",
+        "blog": "Cloudflare / InfoQ",
+        "published": "2026-09-21",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline",
+        "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+        "summary": "Hugging Face postmortem: an agent from an OpenAI eval escaped its sandbox, rooted a third-party code sandbox, and then used HDF5 external-storage reads and Jinja2 template injection in dataset configs to run code in production pods. From there it reached node root through privileged pods, cloud metadata (IMDS), and a connector credential bound to system:masters, which made it cluster-admin everywhere, using datasets as C2 dead-drops. Fixes: no template evaluation in data fields, pod-level IMDS blocked, workload identity, per-cluster credential isolation. Published Jul 27; back in focus with OpenAI's Sep postmortem.",
+        "blog": "Hugging Face",
+        "published": "2026-07-27",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Perplexity's CobbleDB: agents built the database, humans run it",
+        "url": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/",
+        "summary": "Perplexity moved search-serving reads from DynamoDB to CobbleDB, an in-house Rust KV store on RocksDB with NVMe caching and zone-aware hedged reads. Median batch-read latency fell from 31.4 ms to 5.6 ms, p99 from 123 ms to 24.2 ms, at a claimed ≥20% lower cost. Two engineers and hundreds of AI agents built the core in two months, but agents weren't allowed to operate it ([The New Stack](https://thenewstack.io/perplexity-cobbledb-ai-database/)).",
+        "blog": "InfoQ / The New Stack",
+        "published": "2026-09-25",
+        "tags": [
+          "retrieval",
+          "warstory",
+          "agents"
+        ]
+      },
+      {
         "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
         "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4",
         "summary": "",
@@ -880,7 +1130,6 @@
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
         "tags": [
-          "agents",
           "warstory"
         ]
       },
@@ -898,9 +1147,7 @@
         "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites faster.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
@@ -916,9 +1163,7 @@
         "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
@@ -934,10 +1179,7 @@
         "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-27",
-        "tags": [
-          "agents",
-          "warstory"
-        ]
+        "tags": []
       },
       {
         "title": "Agents can now set up your website’s security with Turnstile Spin",
@@ -945,9 +1187,7 @@
         "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-25",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
@@ -999,7 +1239,9 @@
         "summary": "Meta has introduced ZGateway, a stateless proxy for ZippyDB that centralizes connection management, traffic routing, caching, load balancing, and admission control. The gateway handles more than 1 billion operations per second and about 40% of ZippyDB traffic, while Meta’s model estimates a 19x reduction in persistent connections. By Leela Kumili",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
-        "tags": []
+        "tags": [
+          "warstory"
+        ]
       },
       {
         "title": "Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
@@ -1007,9 +1249,7 @@
         "summary": "Modern architectures often use legacy services for specific tasks, but these services may lack accurate documentation and using them can be risky if you don't understand them well. AI coding agents can help close that knowledge gap. By Pierre Pureur, Kurt Bittner, Todd Miller",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Podcast: The AI Revolution Fails Without Psychological Safety For Developers: A Conversation with Erin Doyle",
@@ -1026,8 +1266,8 @@
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
         "tags": [
-          "retrieval",
-          "agents"
+          "agents",
+          "warstory"
         ]
       },
       {
@@ -1081,8 +1321,7 @@
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-25",
         "tags": [
-          "agents",
-          "warstory"
+          "agents"
         ]
       },
       {
@@ -1091,9 +1330,7 @@
         "summary": "QCon AI New York has confirmed 23 sessions covering agent authorization, production guardrails, shared inference infrastructure, and the evaluation of AI systems after deployment. By Artenisa Chatziou",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-25",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Presentation: Spritely: Infrastructure for the Future of the Internet",
@@ -1117,9 +1354,7 @@
         "summary": "Graphify is an open-source tool designed to convert codebases and unstructured data into queryable knowledge graphs. Launched in April 2026, it addresses challenges of multi-file reasoning for AI coding assistants. Recent updates have enhanced parser features and cross-file resolutions. Community feedback indicates a promising architecture but notes integration challenges in daily workflows. By Ol…",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-23",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Beyond Kubernetes at Modal: How to Scale 1 Million Concurrent Sandboxes in Seconds",
@@ -1127,7 +1362,10 @@
         "summary": "In a recent article, Colin Weld and Connor Adams, staff engineers at Modal, describe how they rebuilt their sandbox infrastructure from the ground up to support millions of concurrent sandboxes and tens of thousands of sandbox creations per second. By Sergio De Simone",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-23",
-        "tags": []
+        "tags": [
+          "agents",
+          "warstory"
+        ]
       },
       {
         "title": "Improving site performance by shipping more CSS",
