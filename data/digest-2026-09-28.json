@@ -76,10 +76,7 @@
         "summary": "Splits a deep-search agent into a Planner and a Synthesizer that maintain a bounded summary state instead of an ever-growing ReAct history. Authors report >59% of ReAct trajectories on BrowseComp never terminate in a 64K budget; IterSynth cuts search rounds to 7–8 and context exhaustion below 5%, and works zero-shot as a prompting pattern on frontier models.",
         "authors": "Xingyu Wu, Yuchen Yan, Zhengxi Lu, et al. (ZJU REAL Lab / Tencent)",
         "published": "2026-09-24",
-        "tags": [
-          "retrieval",
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
@@ -305,7 +302,9 @@
         "summary": "Tool observations dominate the context of software-engineering agents, making long interaction histories costly to maintain. Existing context compression methods can discard information needed by later actions, while adapting agents to soft-token representations can compromise their original behavior. To reduce context while preserving action-critical information and agent behavior, we combine Lat…",
         "authors": "Zhensheng Zou, Guoqing Wang, Dan Hao",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "ITS Fairy: Occlusion Assistance Selected Against a Recipient's Own Perception Reports",
@@ -387,7 +386,9 @@
         "summary": "Context projection replaces older tool observations with compact, addressable excerpts, reducing repeated input while potentially adding evidence-retrieval turns. We study this trade-off in ReVerPi, a Pi extension with archived observations and matched full/projected continuations. In an 86-run source-reading campaign with 641 model requests, the 15 completed pairs show identical success: 12/15 pe…",
         "authors": "Guangzhe Zhang",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "retrieval"
+        ]
       },
       {
         "title": "Programs-of-Layers in LLMs through the Lens of Cortical Areas",
@@ -403,9 +404,7 @@
         "summary": "The Model Context Protocol (MCP) provides a common interface through which AI applications discover and use external resources and tools. It allows language-model agents to ground their reasoning in current system state and interact with heterogeneous services. In medical environments, however, exposing device state and action affordances requires deterministic constraints on possible effects. We …",
         "authors": "Bennet Gerlach, Stefan Fischer",
         "published": "2026-09-25",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       }
     ],
     "github": [
@@ -437,7 +436,6 @@
         "language": "Python",
         "published": "2026-09-26",
         "tags": [
-          "agents",
           "retrieval"
         ]
       },
@@ -448,9 +446,7 @@
         "stars": "+2,109 in a day",
         "language": "TypeScript",
         "published": "2026-09-26",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "google/ax",
@@ -470,9 +466,7 @@
         "stars": "+1,653 in a day",
         "language": "Python",
         "published": "2026-09-26",
-        "tags": [
-          "agents"
-        ]
+        "tags": []
       },
       {
         "title": "yetone/magpie",
@@ -562,7 +556,9 @@
         "stars": 460,
         "language": "Markdown",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "retrieval"
+        ]
       },
       {
         "title": "amitshekhariitbhu/ai-engineering-course",
@@ -571,7 +567,9 @@
         "stars": 425,
         "language": "Markdown",
         "published": "2026-09-23",
-        "tags": []
+        "tags": [
+          "retrieval"
+        ]
       },
       {
         "title": "lhlGitHub/threejs-architecture-effects",
@@ -742,7 +740,8 @@
           }
         ],
         "tags": [
-          "agents"
+          "agents",
+          "warstory"
         ]
       },
       {
@@ -764,8 +763,7 @@
           }
         ],
         "tags": [
-          "agents",
-          "warstory"
+          "agents"
         ]
       },
       {
@@ -1068,9 +1066,7 @@
         "summary": "Google's security team replaced C code in giflib with Rust using AI translation checked by differential fuzzing. Performance held up, and the team says AI translations still needed ongoing human oversight.",
         "blog": "InfoQ",
         "published": "2026-09-27",
-        "tags": [
-          "warstory"
-        ]
+        "tags": []
       },
       {
         "title": "Docker Cloud Sandboxes for coding agents",
@@ -1110,8 +1106,6 @@
         "blog": "InfoQ / The New Stack",
         "published": "2026-09-25",
         "tags": [
-          "retrieval",
-          "warstory",
           "agents"
         ]
       },
@@ -1130,6 +1124,7 @@
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
         "tags": [
+          "agents",
           "warstory"
         ]
       },
@@ -1147,7 +1142,9 @@
         "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites faster.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
@@ -1163,7 +1160,9 @@
         "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-28",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
@@ -1179,7 +1178,10 @@
         "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-27",
-        "tags": []
+        "tags": [
+          "agents",
+          "warstory"
+        ]
       },
       {
         "title": "Agents can now set up your website’s security with Turnstile Spin",
@@ -1187,7 +1189,9 @@
         "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
         "blog": "Cloudflare Blog",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
@@ -1239,9 +1243,7 @@
         "summary": "Meta has introduced ZGateway, a stateless proxy for ZippyDB that centralizes connection management, traffic routing, caching, load balancing, and admission control. The gateway handles more than 1 billion operations per second and about 40% of ZippyDB traffic, while Meta’s model estimates a 19x reduction in persistent connections. By Leela Kumili",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
-        "tags": [
-          "warstory"
-        ]
+        "tags": []
       },
       {
         "title": "Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
@@ -1249,7 +1251,9 @@
         "summary": "Modern architectures often use legacy services for specific tasks, but these services may lack accurate documentation and using them can be risky if you don't understand them well. AI coding agents can help close that knowledge gap. By Pierre Pureur, Kurt Bittner, Todd Miller",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "Podcast: The AI Revolution Fails Without Psychological Safety For Developers: A Conversation with Erin Doyle",
@@ -1266,8 +1270,8 @@
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-28",
         "tags": [
-          "agents",
-          "warstory"
+          "retrieval",
+          "agents"
         ]
       },
       {
@@ -1321,7 +1325,8 @@
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-25",
         "tags": [
-          "agents"
+          "agents",
+          "warstory"
         ]
       },
       {
@@ -1330,7 +1335,9 @@
         "summary": "QCon AI New York has confirmed 23 sessions covering agent authorization, production guardrails, shared inference infrastructure, and the evaluation of AI systems after deployment. By Artenisa Chatziou",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-25",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "Presentation: Spritely: Infrastructure for the Future of the Internet",
@@ -1354,7 +1361,9 @@
         "summary": "Graphify is an open-source tool designed to convert codebases and unstructured data into queryable knowledge graphs. Launched in April 2026, it addresses challenges of multi-file reasoning for AI coding assistants. Recent updates have enhanced parser features and cross-file resolutions. Community feedback indicates a promising architecture but notes integration challenges in daily workflows. By Ol…",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-23",
-        "tags": []
+        "tags": [
+          "agents"
+        ]
       },
       {
         "title": "Beyond Kubernetes at Modal: How to Scale 1 Million Concurrent Sandboxes in Seconds",
@@ -1362,10 +1371,7 @@
         "summary": "In a recent article, Colin Weld and Connor Adams, staff engineers at Modal, describe how they rebuilt their sandbox infrastructure from the ground up to support millions of concurrent sandboxes and tens of thousands of sandbox creations per second. By Sergio De Simone",
         "blog": "InfoQ Architecture & Design",
         "published": "2026-09-23",
-        "tags": [
-          "agents",
-          "warstory"
-        ]
+        "tags": []
       },
       {
         "title": "Improving site performance by shipping more CSS",

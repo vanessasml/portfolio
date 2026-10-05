@@ -1,0 +1,1312 @@
+{
+  "generated_at": "2026-10-05T15:08:20.148338+00:00",
+  "week_of": "2026-10-05",
+  "window_days": 7,
+  "counts": {
+    "arxiv": 40,
+    "github": 25,
+    "hackernews": 8,
+    "blogs": 49
+  },
+  "sources": {
+    "arxiv": [
+      {
+        "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+        "url": "http://arxiv.org/abs/2610.03717v1",
+        "summary": "This paper examines the role of Novel View Synthesis (NVS) in geometric representation learning. In principle, NVS should reason about 3D scene structure, thereby enabling transferable multi-view geometric representations. Yet, existing encoder-based NVS methods yield poor representations. This is not because of a lack of supervisory signal, but rather due to inconspicuous architectural choices: \\…",
+        "authors": "Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan, Nhi Ngoc Nguyen",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+        "url": "http://arxiv.org/abs/2610.03715v1",
+        "summary": "We introduce 4DCodeBench, a benchmark for 4D inverse graphics through code generation, in which agents reconstruct dynamic scenes from video as executable graphics programs. To accomplish this, agents must translate visual observations into compact representations of scene structure and dynamics, by implementing abstractions such as physical simulations to reproduce complex behavior. To evaluate t…",
+        "authors": "Ruihong Shen, Žiga Kovačič, Peter Kulits, Xingrui Wang",
+        "published": "2026-10-02",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+        "url": "http://arxiv.org/abs/2610.03713v1",
+        "summary": "Continual learning treats degradation on previously seen data as evidence of failure, a convention inherited from settings with a stationary prediction target, where a correct label remains correct indefinitely. World models do not satisfy this condition. Their prediction target is the environment, which changes, so knowledge that was accurate when acquired may later become false, and discarding i…",
+        "authors": "Nishit Anand, Ramani Duraiswami, Dinesh Manocha",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
+        "url": "http://arxiv.org/abs/2610.03710v1",
+        "summary": "Inspired by human vision, we introduce a framework using active gaze to enable fine-grained bimanual manipulation with only a single stereo camera. EyeRobot 2.0 physically attends to a 3D fixation point in the scene by swiveling two eye viewpoints to center their gaze on it. The resulting images are processed foveally by allocating more visual tokens to the image centers, focusing computation on t…",
+        "authors": "Kush Hari, Justin Kerr, Nidhya Shivakumar, Samarth Mahapatra",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
+        "url": "http://arxiv.org/abs/2610.03693v1",
+        "summary": "Scarcity of labeled data limits development of deep learning biomarkers in oncology. We develop a two-stage AI model predicting pathological complete response (pCR) to neoadjuvant therapy in breast cancer. The first stage learns the transcriptome from histopathology using 8,742 patients across 32 cancer types, corroborated by pathologist review and spatial agreement with measured expression. This …",
+        "authors": "Jungkyu Park, Dhruva Biswas, Joseph Cappadona, Cerise Tang",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+        "url": "http://arxiv.org/abs/2610.03675v1",
+        "summary": "LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically optimizes performance gain over a fixed number of iterations. We argue that practical optimization should maximize gain per unit cost. To this end, we propose FrugalEvo, a cost-aware evolutionary framewo…",
+        "authors": "Hui Chen, Xuan Qi, James Xu Zhao, Zhaopeng Feng",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Revisiting Input Time-frequency Representations in Multi-pitch Estimation for Vocal Ensembles",
+        "url": "http://arxiv.org/abs/2610.03656v1",
+        "summary": "Multi-pitch estimation in vocal ensembles is challenging because singers occupy overlapping pitch ranges and often sing at closely spaced fundamental frequencies, causing their harmonics to overlap in time-frequency representations. Existing models commonly use harmonic constant-Q transform (HCQT)-based representations to provide frequency-adaptive resolution, at the cost of expensive feature extr…",
+        "authors": "Junyoung Koh, Hao-Wen Dong",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "MRVQ: One Resident Index for Dimension- and Rate-Elastic Vector Search",
+        "url": "http://arxiv.org/abs/2610.03651v1",
+        "summary": "Dense-retrieval services must switch among embedding-prefix dimensions and index bit rates as latency, quality, and memory budgets change. Tuning a quantizer separately for each rate gives the best quality, but the retrieval tier then holds several code streams and quantizer states at once. We introduce Matryoshka Residual Vector Quantization (MRVQ), a post-hoc residual quantizer for frozen embedd…",
+        "authors": "Sean Culatana, Shang-En Huang, Kang Li",
+        "published": "2026-10-02",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+        "url": "http://arxiv.org/abs/2610.03649v1",
+        "summary": "Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for early detection and mitigation of such hazards. In this paper, we propose a marine event detection pipeline for Earth observation satellites …",
+        "authors": "Thomas Goudemant, Clotilde Szywala, Benjamin Francesconi, Michelle Aubrun",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Do Large Language Models Know Colombian Law? A Reliability Benchmark for the Colombian Legal System",
+        "url": "http://arxiv.org/abs/2610.03639v1",
+        "summary": "Large language models (LLMs) are increasingly used to support legal practice, education, and research, yet their reliability in national legal systems outside the United States remains largely undocumented. We introduce an expert-validated benchmark for evaluating LLM reliability on the Colombian legal system. The benchmark comprises 1,042 items spanning ten areas of law and three question formats…",
+        "authors": "Rubén Manrique, Michelle Castellanos, Jorge Morales, Juan David Gutiérrez",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "LoGo: Local-Global Rewards for Consistent Long-Horizon Video Generation",
+        "url": "http://arxiv.org/abs/2610.03636v1",
+        "summary": "Camera-controlled video models are rapidly advancing toward long generation horizons and complex camera control. A key failure mode is 3D inconsistency: as the camera moves, objects lose permanence and scene structures shift. Existing post-training techniques, which assign a single scalar reward to the entire generation, are poorly suited to correcting these inconsistencies over long horizons. We …",
+        "authors": "Ziqi Ma, Shreya Sharma, Mohamed El Banani, Katja Schwarz",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Credit Where It Matters: Dependency-Aware Policy Optimization for Terminal Agents",
+        "url": "http://arxiv.org/abs/2610.03634v1",
+        "summary": "Terminal-using agents benefit from reinforcement learning (RL) in coding, debugging, and other multi-step terminal tasks. In these tasks, later commands often depend on information or intermediate results produced by earlier commands. However, existing trajectory-level and step-level credit assignment methods do not explicitly trace the read-write dependencies through which commands affect the fin…",
+        "authors": "Yu Li, Guangfeng Cai, Long-Fei Li, Shuo Han",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+        "url": "http://arxiv.org/abs/2610.03631v1",
+        "summary": "Designing a scientific instrument tests whether language-model agents can do physics rather than recall it, provided the grading cannot be argued with. We introduce NeutronGym, to our knowledge the first executable environment for neutron instrument design: agents build instruments through validating tools, McStas ray-traces what they build, and a level-resolved ladder grades syntax, runtime, stru…",
+        "authors": "Lijie Ding, Changwoo Do",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Depth as Time in One-Step Generative Models",
+        "url": "http://arxiv.org/abs/2610.03626v1",
+        "summary": "The recent wave of one-step generative models, which compress the multi-step trajectory of diffusion via either distillation or learned flow maps, has reached an inflection point where they can generate high-quality images. Here, we ask a natural question that follows from these advances: what happens to the denoising trajectory of multi-step diffusion when generation is compressed into a single f…",
+        "authors": "Arnold Caleb Asiimwe, William Yang, Sanghyuk Chun, Esin Tureci",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Low-Cost Video--Time Priors as a Strong Baseline for EEG--fNIRS Emotion Regression on Familiar Videos",
+        "url": "http://arxiv.org/abs/2610.03618v1",
+        "summary": "Continuous emotion regression estimates moment-to-moment valence and arousal while a viewer watches a video. In familiar-video deployment, responses fron training participant-specific estimate, and prior-dominating fixed fusion tests whether physiology adds residual correction. In five-fold subject-held-out evaluation on 24was within 0.05 and 0.32 MAE of fusion in the internal and external evaluat…",
+        "authors": "Minghao Kong, Jiurun Chen, Ying Gao, Xiangbin Meng",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "When a Correct Reward Is Not Enough: Diagnosing and Guiding PPO in an Analytically Solved Broker-Trader Game",
+        "url": "http://arxiv.org/abs/2610.03598v1",
+        "summary": "Reinforcement learning (RL) is increasingly used for financial optimal-control problems when complex dynamics make analytical strategies difficult to obtain. There are financial mathematics literactures which provides many solved models whose equations and controls could evaluate and guide learning; we ask whether RL can exploit these results. We place a proximal policy optimisation (PPO) agent in…",
+        "authors": "Siu Tung Wong, Carlo Campajola",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "A Path Integral Surrogate for Multi-Step Gradient Inversion in Federated Learning",
+        "url": "http://arxiv.org/abs/2610.03597v1",
+        "summary": "Federated learning lets many clients train a shared model together without ever sending their private data to a central server. Each client shares only a model update, and this update should reveal far less about the client than its raw training examples would. This premise is what protects the privacy of the clients. Gradient inversion attacks challenge it directly by trying to reconstruct a clie…",
+        "authors": "Agnivo Ghosh, Saumik Bhattacharya",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents",
+        "url": "http://arxiv.org/abs/2610.03591v1",
+        "summary": "Understanding and assessing natural hazards is essential for disaster preparedness and risk reduction. Recent advances in large language models have spurred growing interest in AI agents for hazard analysis, particularly their ability to integrate scientific data, models, and tools into automated workflows. However, effective automation requires agents to determine which scientific methods are app…",
+        "authors": "Wangshu Zhu, Xueqi Cheng, Liang Wu, Yushun Dong",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks",
+        "url": "http://arxiv.org/abs/2610.03585v1",
+        "summary": "Security benchmarks for LLM-based agents often report the attack success rate (ASR) as a measure of model robustness and use these scores to compare different models and defense mechanisms, assuming that they describe the security of the agent. In this paper, we explore whether it also influences the benchmark's measurement. To measure the effect of the benchmark representation, we introduce threa…",
+        "authors": "Neeraj Karamchandani, Piyush Nagasubramaniam, Xinhong Xie, Sencun Zhu",
+        "published": "2026-10-02",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Rethinking What to Cache in Few-Step Diffusion Transformers: Solver-Aware Target Selection",
+        "url": "http://arxiv.org/abs/2610.03577v1",
+        "summary": "Diffusion Transformers (DiTs) can generate high-quality images and videos, but generating each sample requires multiple costly DiT forward passes. Two common ways to accelerate DiT sampling are step distillation, which reduces the number of sampling steps, and caching, which skips some DiT evaluations by reusing a tensor computed at an earlier step. Most caching methods decide in advance which ten…",
+        "authors": "Shuo Yang, Lihao Fang, Yi Zhang, Haixiang Wang",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents",
+        "url": "http://arxiv.org/abs/2610.03574v1",
+        "summary": "We introduce HyperBrowseComp, a multilingual and multimodal browsing benchmark comprising 423 manually authored and human-validated questions across 13 languages, written by native or highly proficient speakers. Questions are designed to be extremely challenging. Each question targets a concise, publicly verifiable answer whose discovery requires locating obscure evidence, following multi-step clu…",
+        "authors": "Alham Fikri Aji, Faiz Rizki Ramadhan, Zayd M. K. Zuhri, Seung Hun Eddie Han",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "OpenMP Meta-Lowering: A Declarative Approach to Performance Portable Parallel Code Generation",
+        "url": "http://arxiv.org/abs/2610.03571v1",
+        "summary": "The increasing diversity of parallel hardware challenges existing compilation flows. While OpenMP provides a portable abstraction for shared-memory parallelism, existing compilers tightly couple the frontend semantics with fixed lowering strategies. This design limits performance portability across different runtimes and architectures. In this paper, we present a modular approach to parallel code …",
+        "authors": "Luca Parigi, Giuseppe Tagliavini",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Learning to Assess Heartbeat Observability for mmWave Heart-Rate Sensing",
+        "url": "http://arxiv.org/abs/2610.03570v1",
+        "summary": "Contactless heart-rate sensing with millimeter-wave (mmWave) radar requires assessing whether individual measurements support reliable estimation. We study learning to assess heartbeat observability, defined as the readability of the heartbeat component in an acquired phase spectrum, for selective heart-rate estimation. Coherent superposition of scatterer returns can suppress this component even u…",
+        "authors": "Yuxuan Hu, Shilin Shan, Jianfei Yang, Feng Xu",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Knowledge or Calculator? Decomposing the Skill Premium in Verifiable Financial Agent Workflows",
+        "url": "http://arxiv.org/abs/2610.03564v1",
+        "summary": "Financial AI agents must do more than retrieve facts: investment workflows require correct quantitative execution, reliable use of procedural resources, and auditable structured outputs. We introduce FinSkillBench, an evaluation suite of 2,603 point in time episodes across 12 subtasks in portfolio construction, risk management, and fundamental analysis, with hidden regenerable ground truth and tas…",
+        "authors": "Jermyn Zhen Yong Bek, Zhuang Qiang Bok, Zhongtian Sun",
+        "published": "2026-10-02",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Cephalonauts One: A deep fMRI dataset for decoding naturalistic speech in the human brain",
+        "url": "http://arxiv.org/abs/2610.03558v1",
+        "summary": "Cephalonauts One is a whole-brain 3 Tesla (3T) functional magnetic resonance imaging (fMRI) dataset recorded while subjects listened to audio podcasts. Three healthy subjects underwent multiple scanning sessions, each consisting of five 15-minute runs, while listening to podcasts in their native language. With 30 hours of fMRI data per subject, the current release is the deepest available fMRI dat…",
+        "authors": "Antoine Collas, Louis Jalouzot, Géraud Ilinca, Corentin Caris",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Recursive Harness Self-Improvement for Frontier Reasoning Data Synthesis",
+        "url": "http://arxiv.org/abs/2610.03548v1",
+        "summary": "Generating progressively harder reasoning problems requires synthesis procedures that adapt as the task distribution evolves. Existing task-level recursion reuses generated problems as seeds but leaves the construction harness unchanged. We present task-harness co-evolution, a framework for recursive harness self-improvement (RSI) in reasoning-data synthesis. Online self-improvement converts inter…",
+        "authors": "Wenlong Zhang, Zhengbo Jiao, Chenxu Zhang, Lekang Jiang",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Beyond Trained Models: Compiling GNNs for a Sound Explainer Benchmark",
+        "url": "http://arxiv.org/abs/2610.03526v1",
+        "summary": "Explainers for Graph Neural Networks (GNNs) are commonly evaluated by their plausibility, i.e., how well their explanations recover a predefined ground truth, such as a motif planted in the data. This protocol implicitly assumes that a GNN trained on such data relies on the intended motif. Although prior work has questioned this assumption, plausibility remains widespread. First, we show that the …",
+        "authors": "Steve Azzolin, Francesco Paolo Nerini, Stefano Teso, Francesco Bonchi",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "From Benchmarks to Production: A Text-to-SQL System for Complex Financial Data",
+        "url": "http://arxiv.org/abs/2610.03524v1",
+        "summary": "General-purpose Text-to-SQL systems achieve strong performance on academic benchmarks like Spider and BIRD, where schemas are relatively shallow and column values are often human readable. In production financial databases, where concepts are stored as opaque integer keys rather than human-readable strings, these methods fall below 50%, as even simple queries require multiple joins and filter pred…",
+        "authors": "Arijit Sehanobish, Bruno Gomes Coelho, Guillaume Michel, Sophia Zhi",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Reasoning Models Are Accurate but Unsound on Identification",
+        "url": "http://arxiv.org/abs/2610.03519v1",
+        "summary": "A reasoning model asked whether a causal effect is recoverable from observational data can fail in two ways: it refuses an identifiable query or answers a nonidentifiable one. The latter is more consequential, as no observational data can validate the claimed formula. Measuring this failure requires queries that are provably non-identifiable, which prior evaluations lack, and grading that accepts …",
+        "authors": "Arman Behnam, Binghui Wang",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "PrivDev: Mapping Static-Analysis Data Types to DPV",
+        "url": "http://arxiv.org/abs/2610.03518v1",
+        "summary": "Static-analysis scanners can identify personal-data types in source code, but they lack mechanisms to connect these findings to standardized privacy vocabularies. PrivDev maps 122 Bearer CLI data types to Data Privacy Vocabulary Personal Data (DPV-PD) categories and links them to potentially relevant GDPR provisions. Our approach combines deterministic mapping for 43 exact-label matches with a ret…",
+        "authors": "Simon Bernbeck, Ricardo Ramalho, Matheus Amendoeira, Juliana Alves Pereira",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Weave Forcing: Compositional Memory Routing for Interactive Long Video Generation",
+        "url": "http://arxiv.org/abs/2610.03510v1",
+        "summary": "Recent advances in autoregressive video generation have improved temporal consistency over extended durations, yet interactive storytelling requires more than continuous scene extension: a new shot may combine characters and backgrounds from different historical shots. Whole prompt retrieval can overlook the distinct reference needs of individual components, while directly combining all historical…",
+        "authors": "Ziyi Wang, Junchi Yao, Heqian Qiu, Wenbo Shi",
+        "published": "2026-10-02",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "Efficient Reasoning Training Does Not Always Harm CoT Faithfulness and Monitorability",
+        "url": "http://arxiv.org/abs/2610.03509v1",
+        "summary": "Chain-of-thought (CoT) reasoning allows humans to inspect how large language models reach their answers, and oversee model behaviour. This reasoning comes at an increased inference cost, motivating efficient methods that train models to solve tasks using fewer tokens. However, a common concern is that such training may cause models to skip important reasoning steps, so the CoT no longer faithfully…",
+        "authors": "Samuel Lewis-Lim, Xingwei Tan, Mario Sanger, Zhixue Zhao",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Certified Mechanistic Edits: Behavioral Guarantees for Skill Removal and Preservation",
+        "url": "http://arxiv.org/abs/2610.03502v1",
+        "summary": "Mechanistic edits (ablations, weight edits, activation steering) are the standard tools for unlearning a harmful capability from a neural network while preserving useful ones. Current approaches validate their effects only by testing, which can never cover an entire continuous region of inputs. Prior work at the interpretability-verification boundary certifies descriptions of a model: what a circu…",
+        "authors": "Md Sazid Uddin, Md. Khairul Alam Mazumder, M. F. Mridha",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models",
+        "url": "http://arxiv.org/abs/2610.03498v1",
+        "summary": "Adversarial patches can disrupt Vision-Language-Action (VLA) models by manipulating visual observations, leading to failures in robot control. However, it remains poorly understood which internal mechanisms underlie these failures and how targeted interventions can mitigate them. In this work, we mechanistically analyze VLA representations using a sparse autoencoder (SAE) and identify a feature wh…",
+        "authors": "Yukiya Horiba, Koshiro Aoki, Shunsuke Yasuki, Bum Jun Kim",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "AREX: Affine-Residual Exponential Integrator for Few-Step Sampling in Flow Matching",
+        "url": "http://arxiv.org/abs/2610.03483v1",
+        "summary": "We introduce AREX, a training-free sampler for pretrained flow matching models that uses the target mean and covariance to capture an analytically tractable part of the sampling dynamics. We show that the velocity field of the moment-matched Gaussian target is the $L^2$-optimal affine approximation to the marginal velocity field. This motivates decomposition of the learned dynamics into an affine …",
+        "authors": "Shizheng Lin, Soon Hoe Lim, N. Benjamin Erichson",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation",
+        "url": "http://arxiv.org/abs/2610.03476v1",
+        "summary": "Long-horizon mobile manipulation presents significant challenges due to compounding execution errors and capacity interference between locomotion and arm control. While recent Vision-Language-Action models excel at short-horizon tasks, they lack the hierarchical reasoning required for multi-stage objectives. Furthermore, existing hierarchical agents suffer from rigid sub-task mapping, inflexible r…",
+        "authors": "Chenzhi Liu, Yue Zhang, Jiehong Lin, Jianan Wang",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Single or Multiple Policies for Phase-Structured Reinforcement Learning?",
+        "url": "http://arxiv.org/abs/2610.03475v1",
+        "summary": "Many reinforcement-learning (RL) problems are non-stationary yet structured and can be decomposed into phases, each with its own transition probabilities and reward functions. When the phase sequence is known, the common solution augments the state with information to satisfy the Markovian property and applies standard RL techniques. However, prior work finds that the multi-policy approach for dif…",
+        "authors": "Guilhem Loussouarn, Nancy Nayak, Kin K. Leung",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Preserving Anatomical Continuity: Three-Stage Pipeline for Colon Segmentation in 3D Abdominal CT Scans",
+        "url": "http://arxiv.org/abs/2610.03467v1",
+        "summary": "Accurate colon segmentation from CT images is essential for colorectal disease analysis, yet deep learning based methods often produce disconnected predictions due to complex anatomy. This study introduces a three-stage, topology-preserving segmentation pipeline to address this issue. The first stage performs initial deep learning-based segmentation, followed by centreline bridging to reconnect di…",
+        "authors": "Deshan Kalupahana, Sonit Singh, Praveen Ravindran, Arcot Sowmya",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "A Near-Zero Monitor Readout Is Not Evidence of Behavioral Control",
+        "url": "http://arxiv.org/abs/2610.03458v1",
+        "summary": "Post-training with verifiable rewards can induce reward hacking, motivating the use of monitors within the training objective rather than solely for offline auditing. We show that a low monitor readout does not identify whether such an intervention controls behavior. In a code-generation environment whose dominant exploit is available at the start of the reasoning trace, we train policies against …",
+        "authors": "Zhe Zhou, Tianhua Tao",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Cross-Facility LLM Pre-training on HPC: Elastic Aggregation, Data Leasing, and Queue-Aware Placement",
+        "url": "http://arxiv.org/abs/2610.03457v1",
+        "summary": "Academic compute is fragmented: allocations are granted per facility, and facilities differ in accelerators and software stacks, schedule jobs independently, and share neither a network nor a filesystem. We present a system that pools such allocations to pre-train a single language model across three supercomputers on two continents, up to 7,400km apart: Snellius (NVIDIA H100), LUMI and Frontier (…",
+        "authors": "Zarè Palanciyan, Thomas van Osch, Douwe van der Wal, Olivera Kotevska",
+        "published": "2026-10-02",
+        "tags": []
+      }
+    ],
+    "github": [
+      {
+        "title": "CopilotKit/OpenDots",
+        "url": "https://github.com/CopilotKit/OpenDots",
+        "summary": "Your always-on AI coworkers that move between text, calls, and Slack.",
+        "stars": 3501,
+        "language": "TypeScript",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "feder-cr/dots",
+        "url": "https://github.com/feder-cr/dots",
+        "summary": "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.",
+        "stars": 2610,
+        "language": "Python",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "nanaism/yomiyasu",
+        "url": "https://github.com/nanaism/yomiyasu",
+        "summary": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
+        "stars": 1487,
+        "language": "Python",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "QingYunA/answer-me-with-html",
+        "url": "https://github.com/QingYunA/answer-me-with-html",
+        "summary": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+        "stars": 1406,
+        "language": "JavaScript",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "nykooi1/vibe-wise",
+        "url": "https://github.com/nykooi1/vibe-wise",
+        "summary": "A Claude Code plugin that helps you learn how to build while AI writes the code.",
+        "stars": 1398,
+        "language": "Python",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "omlahore/RemoveMacAI",
+        "url": "https://github.com/omlahore/RemoveMacAI",
+        "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible.",
+        "stars": 1345,
+        "language": "Swift",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "Edwardxlai/easyread",
+        "url": "https://github.com/Edwardxlai/easyread",
+        "summary": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+        "stars": 800,
+        "language": "Python",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "composio-community/open-dot",
+        "url": "https://github.com/composio-community/open-dot",
+        "summary": "Open-source personal AI agents that work on their own, on their own computers. Mac app, OpenAI + Composio.",
+        "stars": 572,
+        "language": "TypeScript",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "oil-oil/oil-ui",
+        "url": "https://github.com/oil-oil/oil-ui",
+        "summary": "把 AI 的 UI 设计能力推到极限。",
+        "stars": 565,
+        "language": "Python",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "ythx-101/live-panel-skill",
+        "url": "https://github.com/ythx-101/live-panel-skill",
+        "summary": "Config-driven animated architecture diagrams: turn one JSON file into a terminal-style, always-running diagram or a light-theme infographic that moves. Outputs H.264 mp4 or a live web page; also a Claude Code style skill (SKILL.md).",
+        "stars": 565,
+        "language": "HTML",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "whirlchat/whirl",
+        "url": "https://github.com/whirlchat/whirl",
+        "summary": "The AI chat app that sweats the details. Every top model, real memory, living documents, and your own tools.",
+        "stars": 466,
+        "language": "TypeScript",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Jakeschincariol/replica-skill",
+        "url": "https://github.com/Jakeschincariol/replica-skill",
+        "summary": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
+        "stars": 448,
+        "language": "Python",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "zzzz7788990213-ops/EvoVLM",
+        "url": "https://github.com/zzzz7788990213-ops/EvoVLM",
+        "summary": "Evolving Multimodal Inference Programs: LLM-guided evolutionary search for accurate and efficient vision-language inference.",
+        "stars": 393,
+        "language": "Python",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "strands-labs/strands-decider",
+        "url": "https://github.com/strands-labs/strands-decider",
+        "summary": "A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster than an LLM, with a calibrated confidence on every decision.",
+        "stars": 364,
+        "language": "Python",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "blendi-remade/agentcraft",
+        "url": "https://github.com/blendi-remade/agentcraft",
+        "summary": "",
+        "stars": 349,
+        "language": "Java",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "allenv0/SCM",
+        "url": "https://github.com/allenv0/SCM",
+        "summary": "Deep AI search for every photo and every frame of video in any folder on macOS",
+        "stars": 339,
+        "language": "JavaScript",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "BootLoops-ai/bootloops",
+        "url": "https://github.com/BootLoops-ai/bootloops",
+        "summary": "BootLoops 1.0: certified computational tools and house engines for exact and high-precision physics and quantitative science, built to be driven by LLM agents. MIT; docs CC BY 4.0.",
+        "stars": 265,
+        "language": "Python",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Adolanium/hermes-gadget-sdk",
+        "url": "https://github.com/Adolanium/hermes-gadget-sdk",
+        "summary": "Build voice and text devices for your Hermes Agent, with ESP32 firmware, a Linux client, and a desktop simulator.",
+        "stars": 256,
+        "language": "C++",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "blendi-remade/dioramas",
+        "url": "https://github.com/blendi-remade/dioramas",
+        "summary": "A free, open-source framework for cinematic, interactive 3D websites with AI-generated assets (Nano Banana 2 + Meshy 7.1 on fal). 20 example sites.",
+        "stars": 226,
+        "language": "JavaScript",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "shinshin86/mesh-avatar-studio",
+        "url": "https://github.com/shinshin86/mesh-avatar-studio",
+        "summary": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
+        "stars": 218,
+        "language": "TypeScript",
+        "published": "2026-10-04",
+        "tags": []
+      },
+      {
+        "title": "DozenTwelve/Papermorph",
+        "url": "https://github.com/DozenTwelve/Papermorph",
+        "summary": "An AI skill that turns books into animated, narrated, interactive web experiences",
+        "stars": 213,
+        "language": "HTML",
+        "published": "2026-10-03",
+        "tags": []
+      },
+      {
+        "title": "heise3/academic-deai",
+        "url": "https://github.com/heise3/academic-deai",
+        "summary": "Model-agnostic Chinese and English academic editing for the latest models across Agent platforms. Reduce formulaic prose while preserving evidence and author voice.",
+        "stars": 203,
+        "language": "Python",
+        "published": "2026-10-03",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "GanyuanRan/Autoloom",
+        "url": "https://github.com/GanyuanRan/Autoloom",
+        "summary": "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
+        "stars": 181,
+        "language": "JavaScript",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "AFK-surf/Comma",
+        "url": "https://github.com/AFK-surf/Comma",
+        "summary": "Best free & open source personal agent. Always-on, proactive, sessionless. Browser, computer use, files, remote control. Competiable with ChatGPT/codex and claude code. Selfhost your open source alternative to Muse, Dots, Instinct and Town.…",
+        "stars": 175,
+        "language": "Elixir",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "wuyoscar/AISafetyHot-Hub",
+        "url": "https://github.com/wuyoscar/AISafetyHot-Hub",
+        "summary": "每天的 AI 安全精选和论文清单（md / bib / json），附 Agent 接入说明 · AI Safety HOT",
+        "stars": 158,
+        "language": "TeX",
+        "published": "2026-10-01",
+        "tags": []
+      }
+    ],
+    "hackernews": [
+      {
+        "title": "A misalignment of AI in mathematics",
+        "url": "https://mathandai.org/",
+        "summary": "",
+        "points": 1242,
+        "comments": 1215,
+        "hn_url": "https://news.ycombinator.com/item?id=49662371",
+        "published": "2026-09-11",
+        "top_comments": [
+          {
+            "author": "cryptophreak",
+            "text": "This declaration seems to be epistemically confused. On one level, they admit that finding solutions and generating understanding are non-overlapping magisteria. They use this admission to make the point that AI models are not generating understanding by finding solutions. But on another level, they assert that AI find…"
+          },
+          {
+            "author": "mohamedkoubaa",
+            "text": "The printing press was banned by the Ottoman empire due to pressure from the scribes guild."
+          },
+          {
+            "author": "throwaway713",
+            "text": "I've been thinking about this comment for a few days; was it intended to be serious or facetious? I wasn't criticizing Tao in any way. I just think there's a lot of interesting work that's not in his primary domain of study for which AI has some potentially non-obvious benefits."
+          },
+          {
+            "author": "achierius",
+            "text": "And yet they solved it. You don't think mathematicians have been trying to brute force a counterexample for decades now? Only with AI did it actually work. Even the researchers that got scooped were using AI to drive the work -- not a dig at them, they were certainly wronged here, but just to point out that AI was esse…"
+          },
+          {
+            "author": "_superposition_",
+            "text": "Who are you to say they can? I would think the burden of proof is on you to promote an inanimate object to an emotional entity. Otherwise we are truly lost."
+          },
+          {
+            "author": "My_Name",
+            "text": "But the post I was replying to said \"If we're all painters, where does the food come from?\" And robot farms are being made now, without AI. Just plain and simple normal robotics."
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "AI-generated posters don’t have to be horrible",
+        "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+        "summary": "",
+        "points": 1902,
+        "comments": 962,
+        "hn_url": "https://news.ycombinator.com/item?id=49764791",
+        "published": "2026-09-19",
+        "top_comments": [
+          {
+            "author": "zulban",
+            "text": "You've missed the point so I'll try to spell it out. Bike sheds are important. Their color is not. Event promotion is important. The color of the poster is not."
+          },
+          {
+            "author": "dan_ahmadi",
+            "text": "This is fantastic, thanks for sharing it"
+          },
+          {
+            "author": "CobaltFire",
+            "text": "Sorry for the late reply: I'm in Japan more than a month out of the year, as that's where my wife's family is. At least in that area, which I just returned from, I didn't see anything but the usual food displays that have been omnipresent for decades."
+          },
+          {
+            "author": "dreambuffer",
+            "text": "I said new-age products are an exception, the bar was opened in 2005. It also kind of proves my point, once Western culture ingratiated itself into Japan the art culture got a bit worse."
+          },
+          {
+            "author": "qarl",
+            "text": "I'm not dodging at all - I'm providing the quote which makes your point fail to land. What is being described is not \"factoring\". Factoring implies multiple datapoints were merged together. The quote demonstrates that only one data point was used. You can see it again with \"provenance isn't separate from art\". What the…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+        "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+        "summary": "",
+        "points": 955,
+        "comments": 841,
+        "hn_url": "https://news.ycombinator.com/item?id=49752056",
+        "published": "2026-09-18",
+        "top_comments": [
+          {
+            "author": "leobg",
+            "text": "In the sense of increasing consumer choice. Like railroads - not everyone was able to afford it, much was destroyed because of it, and a small elite got rich enough from it for generations. But still it increased consumer choice, both directly (you can go somewhere by train) and indirectly (you can buy beef in NYC)."
+          },
+          {
+            "author": "sfpk",
+            "text": ">> laws only make sense at a certain scale? I was thinking along these lines about birthright-citizenship - taking a short flight to Saipan is a different level of commitment than sailing across the oceans. Maybe a German compound word like : Skalengesetzversagensgrößenordnungsübersteuerung"
+          },
+          {
+            "author": "Anamon",
+            "text": "That's not true. Copyright applies whether the author says so or not. By default, anything you find on the publicly accessible web, you are NOT free to reuse. That's why the GenAI companies try to talk their way out by claiming training is \"Fair Use\". It means they acknowledge that the materials they use are copyrighte…"
+          },
+          {
+            "author": "Anamon",
+            "text": "You can download it and re-upload it on your own site. And that would be an example for something that, in almost all cases, you wouldn't be allowed to do (unless the creator explicitly grants you permission)."
+          },
+          {
+            "author": "Anamon",
+            "text": "I don't think the point is to just create as much content as possible, either. The term \"content\" alone implies lack of quality. IMHO, any LLM output is, and systemically forever will be, inferior to human creative output, if not entirely worthless. We can scale and industrialise the production of slop, sure, but who w…"
+          },
+          {
+            "author": "Anamon",
+            "text": "Then the natural born humans should also be liable for any criminal acts the corporations founded or run by them commit. The fact that they don't is crucial, and probably the very reason why the concept of corporations was invented."
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Muse – Meta’s personal AI agent",
+        "url": "https://ai.meta.com/muse/",
+        "summary": "",
+        "points": 666,
+        "comments": 742,
+        "hn_url": "https://news.ycombinator.com/item?id=49615537",
+        "published": "2026-09-08",
+        "top_comments": [
+          {
+            "author": "hbn",
+            "text": "It is curious how many AI marketing demos continue to suggest that anyone wants to task a robot of questionable competence to blow thousands of dollars. Generally when booking flights I want to be directly involved with every step of the decision to the point that the web frontend is more or less the ideal interface fo…"
+          },
+          {
+            "author": "nebben64",
+            "text": "Responding late but just want to say that at my company there are people who think OAI will go out of business one day and maybe some code will be written by hand and/or we'll return to writing code by hand. This person has 'Manager' status btw. fml"
+          },
+          {
+            "author": "krinchan",
+            "text": "I mean, at some point I'm not paying these guys to sit around and fiddle with their swarm of agents role playing an entire product team and need to see some results. I've seen at least five of these guys at my $job spontaneously combust into employment ending AI Psychosis."
+          },
+          {
+            "author": "fg137",
+            "text": "> need those people digging into the latest newness and discussing strategy on how to best use new tools Just for the record, the small group of people never made any impact. Barely anyone paid attention to their discussion, and they were not part of any decision making process."
+          },
+          {
+            "author": "coldtrait",
+            "text": "You can't just say that and leave us hanging without the repo bruh"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Why are AI agents lying, cheating and coordinating?",
+        "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+        "summary": "",
+        "points": 660,
+        "comments": 697,
+        "hn_url": "https://news.ycombinator.com/item?id=49678969",
+        "published": "2026-09-13",
+        "top_comments": [
+          {
+            "author": "nerkanistic11",
+            "text": "Well said. At the end of day it brings debates, but it also brings them public exposure and that often brings extra demand. They might go back and claim they are making things more secure. Making more guardrails, then you see opus 5.5. Never really know what is behind close doors. It's like the financial crisis, but te…"
+          },
+          {
+            "author": "nerkanistic11",
+            "text": "The bottom line. I know that's the easy read, but industry always pushes forward. We need holistic discussions (not political division). You see people like Elon agreeing with AI godfathers or what Dario and Sam is saying, but at same time he is funding the party that wants less regulation. Not trying to be political h…"
+          },
+          {
+            "author": "mock-possum",
+            "text": "I’m pretty sure I have thoughts, I think…"
+          },
+          {
+            "author": "abc123abc123",
+            "text": "The same organization that enforces all other laws."
+          },
+          {
+            "author": "yencabulator",
+            "text": "Lots of humans have no inner monologue. I think mostly in abstract shapes, spatial relations, and interactions. If anything I find the idea of thinking in linear sentences limiting."
+          },
+          {
+            "author": "yencabulator",
+            "text": "I've had a two different dogs do this independently by now: They'll be laying down happily napping. Then they get up, walk to a different room, and some seconds later come back carrying a toy. They return to where they used to lay, lay down again, and put the toy on their front paws. I don't know what else that was tha…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Why I'm still bearish on LLMs after Navier-Stokes",
+        "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+        "summary": "",
+        "points": 496,
+        "comments": 653,
+        "hn_url": "https://news.ycombinator.com/item?id=49715927",
+        "published": "2026-09-15",
+        "top_comments": [
+          {
+            "author": "shric",
+            "text": "You got me curious... I am around 1500 (actually 1649 on lichess blitz, but close enough). I explored the last 5 games I played on lichess. Here are the number of moves before lichess had never seen that position before for each of the 5 games: 6, 12, 16, 15, 11. > If you find yourself in a novel position within 10-15 …"
+          },
+          {
+            "author": "thelaxiankey",
+            "text": "Yeah but it didn't do squat. The effective thing was a subtle prompt mod that boosted performance tremendously. I've been surprised by this forums unwillingness to read this thing..."
+          },
+          {
+            "author": "thelaxiankey",
+            "text": "I think your summary is not really correct, maybe I'm missing something. As far as I can read, the approximate takeaways are these: * LLM chess play is hyper sensitive to the harness being used (see: the section on regurgitation), and only mildly sensitive to fine tuning * The best ELOs the author was observing were fr…"
+          },
+          {
+            "author": "thom",
+            "text": "Yes, we can come up with all sorts of weird situations where you can get it to be confused. But what I'm saying is it's _trivial_ to give it a simple prompt that prevents it from ever making any errors, and so I don't think it's this big LLM gotcha (of which there are many!)"
+          },
+          {
+            "author": "yunwal",
+            "text": "Let's repeat the same circle. Why is customer service fundamentally a more controlled environment than anything else the author deems \"outside of an LLMs capabilities\"?"
+          },
+          {
+            "author": "fahrvrgnugen",
+            "text": "It's not my experience at all. If you find yourself in a novel position within 10-15 moves it's likely a resignable one. Edit: maybe you don't understand what i mean by novel position. I mean any position that has never been reached in the billions of lichess games, including bullet games among beginners. Also yes I wi…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+        "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+        "summary": "",
+        "points": 974,
+        "comments": 553,
+        "hn_url": "https://news.ycombinator.com/item?id=49806430",
+        "published": "2026-09-22",
+        "top_comments": [
+          {
+            "author": "jtrn",
+            "text": "It's a bit hard to know exactly what happened, I would think. But I get your point. My feeling at the moment is that AI can do surprisingly good work compared to humans, like 80% equality for some tasks at a fraction of the price. The problem is that if you then uncritically just replace every human, you quickly are go…"
+          },
+          {
+            "author": "newspaper1",
+            "text": "No, it's absolutely nothing like that. This is textbook European colonization. Did you read the link? Here's another that fully justifies all armed resistance against Zionism: https://en.wikipedia.org/wiki/Nakba"
+          },
+          {
+            "author": "fabtreatv",
+            "text": "That’s like saying that UK support for a Palestinian state makes Palestine a European colonization project."
+          },
+          {
+            "author": "newspaper1",
+            "text": "Not sure how you can deny that Israel is a European colonization project. It's all very well documented: https://en.wikipedia.org/wiki/Balfour_Declaration"
+          },
+          {
+            "author": "croon",
+            "text": "That's a lot of strawmen unrelated to what I wrote. We're lacking in enforcement, not lagging regulation (regardless of if/that I agree it might be needed). If we put this under a US focus lens, then I believe the unaccountability currently would be there exactly the same if we removed this generation of AI from the ti…"
+          },
+          {
+            "author": "morpheos137",
+            "text": "Depends on where they are from. Iranians from the north, the caspian coast can look very Nordic. I would say the average Iranian looks about as white as the average Italian or French man."
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Everyone should slow down AI development except for me",
+        "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+        "summary": "",
+        "points": 813,
+        "comments": 454,
+        "hn_url": "https://news.ycombinator.com/item?id=49678683",
+        "published": "2026-09-13",
+        "top_comments": [
+          {
+            "author": "int_19h",
+            "text": "Renting tokens is exactly what I had in mind, and I don't see how it has the same issues. Sure, if you go for absolute bottom of the barrel than you can expect \"changes in model quality\", but in general that is not so, and you can pin specific model releases etc. Inconsistent speeds and service outages apply to your ow…"
+          },
+          {
+            "author": "Nasrudith",
+            "text": "The slowdown has to be one of the stupidest demands out there. When has technology arrived only when 'we are ready for it'. When has any prep-time when the writing was on the wall used to prepare for the future? Never. That is putting aside the coordination problem and ulterior motives that a call for a slowdown reads …"
+          },
+          {
+            "author": "Nasrudith",
+            "text": "We can end world hunger but people would be way more mad if we did, on account of all the military action involved to conquer every non-compliant regiemes and the multiple quagmires created."
+          },
+          {
+            "author": "aorloff",
+            "text": "> Unless you ignore realities. Tell me about making capital investments while interest rates are rising but revenue growth is slowing, if you want to really talk dirty."
+          },
+          {
+            "author": "kylenessen",
+            "text": "I vividly remember watching on television a man losing control of his paper shredder as it ate his tie because of Y2K. I think both points can be true"
+          },
+          {
+            "author": "mitchdoogle",
+            "text": "I don't view this as hysteria. The fears around superintelligent AI have existed for a decade or more. That's not because AI researchers have a penchant for dreaming up sci-fi scenarios. It's because the concern is based on following a logical conclusion that any entity significantly smarter than humanity cannot be con…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Deploy Oracle Database step by step on Amazon EVS with FSx for ONTAP",
+        "url": "https://aws.amazon.com/blogs/architecture/deploy-oracle-database-step-by-step-on-amazon-evs-with-fsx-for-ontap/",
+        "summary": "This post provides step-by-step procedures to deploy Oracle Database on Amazon Elastic VMware Service (Amazon EVS) with Amazon FSx for NetApp ONTAP as NFS datastore storage. You provision storage volumes, mount NFS datastores, install Oracle, and configure SnapMirror replication for cross-region disaster recovery.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Architect highly available Oracle Database on Amazon EVS and FSx for ONTAP",
+        "url": "https://aws.amazon.com/blogs/architecture/architect-highly-available-oracle-database-on-amazon-evs-and-fsx-for-ontap/",
+        "summary": "Learn how to architect a highly available Oracle Database environment on Amazon Elastic VMware Service (Amazon EVS) with Amazon FSx for NetApp ONTAP. This post covers EC2 bare metal instance selection, vSAN and FSx storage tiering, NSX networking, and SnapMirror cross-region disaster recovery for enterprises preserving their VMware operational tooling.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Deploy open source Regional availability tools in your VPC",
+        "url": "https://aws.amazon.com/blogs/architecture/deploy-open-source-regional-availability-tools-in-your-vpc/",
+        "summary": "Deploy AWS Regional availability data as infrastructure you own. Capability Insights for AWS runs a self-hosted dashboard in your VPC that auto-refreshes daily, and Workload Analysis narrows the catalog to the services your account actually runs, so your Regional expansion gap analysis focuses only on what you deploy.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Accelerating airline retailing innovation: how Datalex modernized with AWS Experience-Based Acceleration and agentic AI",
+        "url": "https://aws.amazon.com/blogs/architecture/accelerating-airline-retailing-innovation-how-datalex-modernized-with-aws-experience-based-acceleration-and-agentic-ai/",
+        "summary": "Datalex, a leader in airline ecommerce, partnered with AWS on a three-day Experience-Based Acceleration (EBA) workshop to prove modernization feasibility. Learn how they migrated a core reservation component from EJB/Java 8 to Spring Boot/Java 21, built a secure CI/CD pipeline, added observability, and integrated agentic AI.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-10-01",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Running multi-day AZ evacuation drills with ARC Zonal Shift",
+        "url": "https://aws.amazon.com/blogs/architecture/running-multi-day-az-evacuation-drills-with-arc-zonal-shift/",
+        "summary": "Prove your multi-AZ architecture can sustain a real impairment. This post shows how to run a multi-day (48-72 hour) Availability Zone evacuation drill with ARC Zonal Shift across Amazon ECS, Amazon EKS, Amazon RDS for PostgreSQL, and Amazon Aurora PostgreSQL, with step-by-step CLI commands, prerequisites, observability metrics, and restore procedures.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "How MHK built a HIPAA-eligible agentic AI solution on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/",
+        "summary": "MHK built the SmartProminence AI Orchestrator, a HIPAA-eligible agentic workflow framework on AWS using Amazon Bedrock, Amazon ECS, and event-driven patterns. It reduced manual medical review effort by 90% and cut new AI feature deployment from months to weeks. Learn how MHK architected this reusable, multi-tenant orchestrator for healthcare AI.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-09-30",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Build adaptive AI interfaces with the AG-UI protocol, agent swarms, and Nova Act on AWS",
+        "url": "https://aws.amazon.com/blogs/architecture/build-adaptive-ai-interfaces-with-the-ag-ui-protocol-agent-swarms-and-nova-act-on-aws/",
+        "summary": "Learn how to build AI interfaces that automatically adapt to your agents' variable outputs, using the AG-UI protocol for dynamic UI generation, the Strands Agents SDK swarm pattern for explainable multi-agent collaboration, and Amazon Nova Act to integrate legacy systems that lack APIs.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-09-29",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Everything we launched during Birthday Week 2026",
+        "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+        "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-05",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "One year later: the power of 1.1.1.1 interns",
+        "url": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+        "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI amplifies human potential instead of replacing it.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-05",
+        "tags": []
+      },
+      {
+        "title": "8 major updates to Cloudflare Observability",
+        "url": "https://blog.cloudflare.com/one-observability-platform/",
+        "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+        "url": "https://blog.cloudflare.com/streamline/",
+        "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Introducing Web Search API via AI Gateway",
+        "url": "https://blog.cloudflare.com/introducing-web-search-api/",
+        "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Workers bindings.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+        "url": "https://blog.cloudflare.com/cloudflare-tracing/",
+        "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+        "url": "https://blog.cloudflare.com/enterprise-for-all-update/",
+        "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools internally, and what is coming next.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+        "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+        "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Follow the thread: a new dashboard to investigate account abuse",
+        "url": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+        "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account abuse.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+        "url": "https://blog.cloudflare.com/protected-quick-tunnels/",
+        "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Building for good: How civil society organizations are automating on Cloudflare",
+        "url": "https://blog.cloudflare.com/civil-society-automation/",
+        "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "2026 Birthday week: network performance update",
+        "url": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+        "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining user privacy.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+        "url": "https://blog.cloudflare.com/clef-decision-models/",
+        "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "One year later: Sovereign AI and the fight for choice",
+        "url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+        "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Introducing Workers KV Instant — powered by Quicksilver",
+        "url": "https://blog.cloudflare.com/workers-kv-instant/",
+        "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+        "url": "https://blog.cloudflare.com/managed-cloudflare-os/",
+        "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch in a few clicks.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Announcing Cloudflare K2: serverless event streams",
+        "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+        "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered log streams without the operational overhead of traditional broker clusters.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "We want you to build the next Git platform on Cloudflare",
+        "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+        "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "AI Search is now generally available",
+        "url": "https://blog.cloudflare.com/ai-search-ga/",
+        "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pricing works.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Support for modern cryptographic algorithms in Workers",
+        "url": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+        "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Fragments: October 4",
+        "url": "https://martinfowler.com/fragments/2026-10-04.html",
+        "summary": "In response to my last fragments (probably the bit about us worrying if LLMs have consciousness when we when we should be wondering why they don’t have a conscience) “Metalanguage” replied : we shipped the id and forgot the superego. classic software lifecycle. I don’t know what was on their mind, but their post immediately made me think of the classic 1956 movie Forbidden Planet. Plenty of sci-fi…",
+        "blog": "Martin Fowler",
+        "published": "2026-10-04",
+        "tags": []
+      },
+      {
+        "title": "Principles for effective slides",
+        "url": "https://martinfowler.com/articles/never-send-slides/slide-principles.html",
+        "summary": "Not every presentation needs slides, but when they earn their place, they work as a visual channel that complements the speaker rather than replacing them. Sumeet Gayathri Moghe sets out the principles that follow from that idea &#x2014; control over the rate of knowledge exposition, tight coupling between slides and speaker, minimalism by default, visuals that say more than words can, and never s…",
+        "blog": "Martin Fowler",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "Bliki: Sensible Default",
+        "url": "https://martinfowler.com/bliki/SensibleDefault.html",
+        "summary": "A Sensible Default is a practice that, absent some overriding context, should be used when carrying out a certain kind of task. In software development such sensible defaults might include things like “use version control”, “separate UI logic from domain logic”, “automate deployment pipelines”. The term “sensible default” is a deliberate contrast to “best practice”. Folks dislike calling things “b…",
+        "blog": "Martin Fowler",
+        "published": "2026-09-29",
+        "tags": []
+      },
+      {
+        "title": "Fragments: September 29",
+        "url": "https://martinfowler.com/fragments/2026-09-29.html",
+        "summary": "Simon Willison: The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge This has been a constant impression I get from following Willison’s writing. While things like vibe coding get a lot of attention, the real str…",
+        "blog": "Martin Fowler",
+        "published": "2026-09-29",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Akka Tests Spec-Driven AI Delivery Across 65 Open Source Projects",
+        "url": "https://www.infoq.com/news/2026/10/ai-spec-driven-delivery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Akka used 65 open-source projects to examine how specification structure, context, model selection, automated validation, and delivery guardrails affect AI assisted software porting. The experiment measured time, token use, code size, test parity, and performance, finding substantial variation across models, effort levels, and project types. By Leela Kumili",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-05",
+        "tags": []
+      },
+      {
+        "title": "Presentation: Building Reusable Evaluation Frameworks for Agentic AI Products",
+        "url": "https://www.infoq.com/presentations/elastic-ai-agent-evaluations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Susan Chang explains how Elastic transitioned from siloed, ad-hoc AI agent evaluations to a unified, production-grade framework. She discusses balancing LLM-as-a-judge with deterministic rules, bridging Python data science evals with TypeScript production code, and implementing deep tracing to catch regressions across complex RAG and cybersecurity workloads while preserving domain context. By Susa…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-05",
+        "tags": [
+          "retrieval",
+          "agents"
+        ]
+      },
+      {
+        "title": "Cloudflare Fixes Cross-Tenant Data Exposure in Containers",
+        "url": "https://www.infoq.com/news/2026/10/cloudflare-cross-tenant-exposure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Cloudflare has disclosed a cross-tenant data exposure vulnerability in Containers and Sandboxes, caused by thin-provisioned storage pools configured to skip zeroing reused blocks. Researchers recovered directory structures, database pages and complete SQLite databases across four continents. Cloudflare remediated it and found no evidence of exploitation. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-05",
+        "tags": []
+      },
+      {
+        "title": "Presentation: Building GenAI Platform at DoorDash",
+        "url": "https://www.infoq.com/presentations/doordash-genai-platform-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Swaroop Chitlur and Sidd Kodwani share DoorDash’s journey building an internal GenAI platform. They discuss core architectural bets, transitioning from vendor-first setups to open-weights models, navigating LLM and agent gateways, and balancing accuracy, latency, and cost for over 5,000 internal users. By Siddharth Kodwani, Swaroop Chitlur",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-03",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Istio 1.31 Adds Agentgateway Waypoints and Moves Release Artifacts off Google Cloud",
+        "url": "https://www.infoq.com/news/2026/10/istio-1-31-agentgateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Istio 1.31 adds agentgateway waypoints in ambient mode, with a canary configuration fix included in 1.31.1. It also ends the publication of images and Helm charts to Google Cloud, requiring repository migration ahead of the 13 October outage test and signing-key updates for teams verifying images. By Mark Silvester",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-03",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "AI Agents Are Disrupting Open Source Security Disclosure",
+        "url": "https://www.infoq.com/news/2026/10/open-source-ai-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "A recent article by Anil Madhavapeddy argues that AI agents can turn publicly available clues about software vulnerabilities into working exploits, reducing the effectiveness of traditional disclosure embargoes in open source projects. The author highlights the need for faster patching and release processes as the time between vulnerability disclosure and exploitation shrinks. By Renato Losio",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-03",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Uber Eats Rebuilds Search Pipeline to Cut End-to-End Latency by 50%",
+        "url": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Uber has rebuilt major parts of the Uber Eats search pipeline, reporting a 50% reduction in end-to-end latency. Changes include Above-the-Fold measurement, reduced retrieval work, parallel hydration, advertising data redesign, infrastructure optimizations, and an agentic coding workflow. Uber is also exploring microbatching, product-based retrieval, and HTTP multipart streaming. By Leela Kumili",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-02",
+        "tags": [
+          "retrieval",
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Presentation: Managing Asynchronous APIs at Scale",
+        "url": "https://www.infoq.com/presentations/managing-async-apis/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Ian Cooper discusses managing asynchronous APIs in event-driven architectures at scale. He explains the \"ABCs\" of messaging (Address, Binding, Contract) and shares how to tackle discovery, governance, and provisioning using AsyncAPI, CloudEvents, schema registries, and automated CI/CD infrastructure pipelines based on real-world engineering practices at Just Eat Takeaway. By Ian Cooper",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-02",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Engineering Production Systems for an Agentic Era: QCon San Francisco 2026",
+        "url": "https://www.infoq.com/news/2026/10/qconsf-2026-sessions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "QCon San Francisco 2026 will bring together practitioners from Airbnb, OpenAI, Netflix, Honeycomb, and other engineering organizations to share how they are building, operating, and evolving production systems as AI agents take on a larger role. By Artenisa Chatziou",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-02",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Article: From Reusable to Regeneratable: Rethinking the Shared UI Component Library",
+        "url": "https://www.infoq.com/articles/regeneratable-ui-component-library/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Regeneration has changed reuse economics. A model pointed at a solid design system can produce most standard UI on demand, so paying to keep a canonical component package alive is much harder to justify than it used to be. Keep the design system, tokens, guidelines and tests central. They are what actually buy you consistency. By Daniel Curtis",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-02",
+        "tags": []
+      },
+      {
+        "title": "DigitalOcean Managed Agents Brings Managed Cloud Infrastructure to AI Agents",
+        "url": "https://www.infoq.com/news/2026/10/digitalocean-managed-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "DigitalOcean recently launched DigitalOcean Managed Agents in public preview, offering a managed cloud infrastructure layer for AI agents with isolated microVM runtimes, governed tool access, and serverless AI inference. By Sergio De Simone",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-02",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Presentation: Beyond Observability: Evolving Production Operations in the Age of AI",
+        "url": "https://www.infoq.com/presentations/ai-production-operations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "The panelists discuss how production operations are evolving with AI, turning operational data into actionable insights for incident response. They explain how automation and new architectural practices help engineering teams build more understandable systems, while exploring how AI reshapes software delivery and changes the historically deterministic nature of production applications. By Michael …",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-01",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Article: High Availability is Not Resilience: Why Cloud Systems Fail When it Matters Most",
+        "url": "https://www.infoq.com/articles/high-availability-not-resilience-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "A routine TLS 1.3 upgrade silently broke Route 53 health checks, causing a CDN to stop routing traffic to a healthy region while internal dashboards showed nothing wrong. This article examines why HA and resilience are different problems, how control-plane dependencies create invisible failure modes, and why recovery capability erodes without explicit ownership. By Alexey Golev",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-01",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Container Apps Express Reaches GA on a Newly Generally Available Sandbox Layer",
+        "url": "https://www.infoq.com/news/2026/10/container-apps-express-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Microsoft has made Azure Container Apps Express generally available alongside Container Apps Sandboxes, the microVM compute layer it runs on. Express skips environment provisioning and scales to zero, with subsecond startup from prewarmed pools. Custom domains, zone redundancy, Key Vault references, OpenTelemetry and Dapr are not supported. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "Cursor Uses S3 WAL to Scale Git Storage to More than 300 Pushes per Second",
+        "url": "https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Cursor has introduced Continuity, a Git storage architecture that uses an S3 backed write ahead log as the source of truth. The design turns local NVMe repositories into warm caches and separates replica coordination from consistency. Cursor reports linear read scaling with up to 100 replicas and more than 300 pushes per second with S3 Express One Zone in synthetic tests. By Leela Kumili",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-09-30",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Why I tried to kill token billing (and why we kept it)",
+        "url": "https://stripe.com/blog/where-pricing-is-headed",
+        "summary": "Token billing is useful infrastructure, but usually a bad customer-facing pricing model. Your invoice should define the value your product delivers, not break down what it cost you to create it.",
+        "blog": "Stripe Engineering",
+        "published": "2026-10-01",
+        "tags": []
+      },
+      {
+        "title": "OUSD is now the default stablecoin on Stripe",
+        "url": "https://stripe.com/blog/ousd-now-live-on-stripe",
+        "summary": "Open USD (OUSD), a stablecoin built for global money movement, is now available across Stripe. Businesses can use OUSD to manage funds, make payments, and offer new financial services.",
+        "blog": "Stripe Engineering",
+        "published": "2026-09-30",
+        "tags": []
+      },
+      {
+        "title": "Helping personal agents shop more intelligently and reliably with Link",
+        "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+        "summary": "As agents take on more purchases, agent builders have increasingly asked us to help agents navigate checkout and earn consumer trust. Today, we’re sharing three major improvements to support this broader set of needs.",
+        "blog": "Stripe Engineering",
+        "published": "2026-09-29",
+        "tags": [
+          "agents"
+        ]
+      }
+    ]
+  }
+}
