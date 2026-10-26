@@ -1,0 +1,1153 @@
+{
+  "generated_at": "2026-10-26T13:26:46.558285+00:00",
+  "week_of": "2026-10-26",
+  "window_days": 7,
+  "counts": {
+    "arxiv": 40,
+    "github": 25,
+    "hackernews": 8,
+    "blogs": 31
+  },
+  "sources": {
+    "arxiv": [
+      {
+        "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+        "url": "http://arxiv.org/abs/2610.32978v1",
+        "summary": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrangements, yet their outputs require geometric reasoning to become physically valid 3D scenes. We intro…",
+        "authors": "Yuhan Liu, Lianhui Qin, Shenji Wan",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+        "url": "http://arxiv.org/abs/2610.32971v1",
+        "summary": "Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusability and an unclear empirical capability boundary. We introduce RobustRLlib, an algorithm-centric l…",
+        "authors": "Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+        "url": "http://arxiv.org/abs/2610.32969v1",
+        "summary": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their motions must be estimated and retargeted to the robot, and they do not directly …",
+        "authors": "Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models",
+        "url": "http://arxiv.org/abs/2610.32948v1",
+        "summary": "Objective: To develop a unified vision-language model for prompt-conditioned quantitative ultrasound measurement that addresses the mismatch between continuous measurement targets and discrete token-based numerical prediction. Methods: This article presents HAD-VLM, a hybrid autoregressive-diffusion framework that combines autoregressive text generation with continuous measurement prediction withi…",
+        "authors": "Dianye Huang, Jiamei Guo, Yue Zhou, Mingde Li",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+        "url": "http://arxiv.org/abs/2610.32945v1",
+        "summary": "Large language model (LLM) platforms introducing advertising must decide how much capability ad revenue should fund and what consumers should pay to avoid ads. We study a monopolistic platform that jointly chooses costly response quality, advertising intensity, and subscription prices when advertising reduces user value but better service raises advertising returns. Three findings follow. First, w…",
+        "authors": "Yuhang Ji, Fasheng Xu, Tianjun Feng",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Runtime BiDi Structural Verification Catches Right-to-Left Layout Defects that Accessibility, Actionability, and Logical-Property Linting Miss",
+        "url": "http://arxiv.org/abs/2610.32934v1",
+        "summary": "Bidirectional (right-to-left, RTL) layout defects arise when interfaces authored with physical directional CSS (margin-left, border-left, text-align:left) are rendered under dir=\"rtl\" without being mirrored. Accessibility engines (axe-core), actionability engines (Playwright), and even Stylelint's current core logical-property rule fail to localise these defects. We present runtime structural inva…",
+        "authors": "Karan Yadav",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model",
+        "url": "http://arxiv.org/abs/2610.32933v1",
+        "summary": "Despite advances in multilingual text representations, effective dense retrieval for Persian remains constrained by the limited availability of language-specific training resources and compact embedding models. We present Yalda Embedding, a 595.8-million-parameter Persian retrieval model adapted from Qwen3-Embedding-0.6B using more than one million query-document pairs. On eight Persian retrieval …",
+        "authors": "Yalda Taheri, Mohammad Hassan Heydari, Armon Rasooli",
+        "published": "2026-10-23",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "SemantEq: Faithful Bidirectional Equivalence of Formal Statements",
+        "url": "http://arxiv.org/abs/2610.32919v1",
+        "summary": "Statement autoformalization translates mathematics from natural language into a proof assistant such as Lean 4, and models now do it at scale. As provers get stronger, the burden of correctness shifts from the proof to the statement, that is, to whether the formal statement faithfully translates its source. Given a trusted reference formalization, the natural test is logical equivalence, and it pr…",
+        "authors": "Xinrui Li, Pawan Sasanka Ammanamanchi, Siddharth Bhat, Rianna Jamdar",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+        "url": "http://arxiv.org/abs/2610.32891v1",
+        "summary": "Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code produced by LLM self-refinement pipelines is also energy-efficient relative to canonical human referen…",
+        "authors": "Sadra Emami, Benjamin Weigell, Mohammad Reza Mousavi, Gunel Jahangirova",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Closing the Modality Gap via Simplex-Constrained Representations",
+        "url": "http://arxiv.org/abs/2610.32890v1",
+        "summary": "While multimodal contrastive models like CLIP and CLAP successfully learn shared representations, their embeddings typically exhibit a persistent \\emph{modality gap}. We propose addressing this separation through a purely geometric approach: changing the embedding domain from the unit sphere, $S^{d-1}$, to the probability simplex, $Δ^{d-1}$. Although both manifolds share the same intrinsic dimensi…",
+        "authors": "Shubham Gupta, Siva Reddy, Perouz Taslakian, Valentina Zantedeschi",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+        "url": "http://arxiv.org/abs/2610.32881v1",
+        "summary": "Reinforcement learning (RL) post-training improves the reasoning capabilities of large language models, but its cost is dominated by autoregressive rollout generation, which can exceed 70% of training time. Existing speculative-decoding methods are poorly suited to this setting: model-based drafters consume scarce GPU memory and may become misaligned as the policy evolves, while existing model-fre…",
+        "authors": "Nilesh Prasad Pandey, Jangseon Park, Jason Kong, Onat Gungor",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+        "url": "http://arxiv.org/abs/2610.32878v1",
+        "summary": "Low-rank SVD-based compression offers a powerful strategy to reduce the computational costs of LLMs. However, existing methods face two key limitations: (i) global rank allocation, where uncalibrated error proxies fail to capture complex error propagation, and (ii) decomposition quality, where Fisher-based estimators suffer from severe rank collapse. In this work, we address these limitations by i…",
+        "authors": "Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler, Emad Aghajanzadeh",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence",
+        "url": "http://arxiv.org/abs/2610.32876v1",
+        "summary": "Pipelines that combine large language models (LLMs) with static analysis let the model consume the analyser's output as evidence, but whether the model distinguishes true from false evidence, and whether its scrutiny depends on what the evidence claims, has not been measured. We built an intraprocedural analyser for C/C++ that produces proof obligations and audited vulnerable and patched functions…",
+        "authors": "ZhiHong Liu, Shuyao Gao",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Do \"True\" and \"False\" Add Up to One? Complement Consistency in LLM-Agent Opinion Simulations",
+        "url": "http://arxiv.org/abs/2610.32874v1",
+        "summary": "In LLM-agent opinion simulations, each agent reports the probability that a claim is true after seeing its own previous probability and the probabilities reported by its neighbors, and that number becomes its state in the next round. If the number describes the agent's position rather than the sentence it was shown, then rewriting the claim as its complement and replacing every probability p with …",
+        "authors": "Anouar Imel, Jin Qi",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "From Deliberately Constructed Systemic Representations of the World of Activity to Dialogue: A Five-Level Communication Architecture for Strong Language-Based ASI",
+        "url": "http://arxiv.org/abs/2610.32869v1",
+        "summary": "This paper proposes a five-level organization of message formation and understanding within thinking and activity in which ASI participates. Its central thesis is that a language model's context is fundamentally incapable of presenting the foundations of utterance formation for examination and verification. These foundations are established in advance by acquired schemas, systemic representations …",
+        "authors": "Maxim Osovsky",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery",
+        "url": "http://arxiv.org/abs/2610.32866v1",
+        "summary": "Fine-tuning on datasets of unknown origin can create a backdoor in the trained model when the data includes poisoned examples. Difficult to localise and remove, backdoors can persist through safety training. While parameter-efficient fine-tuning methods capture the full parameter changes introduced during training, they are not easily interpretable. We present the full method of TopKLoRA, extendin…",
+        "authors": "Marek Masiak, Andrzej Szablewski, Nicola Cancedda, Constantin Venhoff",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "PoKER: A Probability of Kill Estimation Rate Model for Air-to-Air Missiles Using Machine Learning on Stochastic Targets",
+        "url": "http://arxiv.org/abs/2610.32864v1",
+        "summary": "This work introduces PoKER, a novel probabilistic model engineered to optimize missile launch effectiveness in air-to-air scenarios, specifically within Beyond Visual Range (BVR) air combat. Unlike conventional Weapon Engagement Zone (WEZ) models that delineate zones based on static distances such as maximum, minimum, and no-escape ranges, PoKER applies machine learning to predict kill probabiliti…",
+        "authors": "Joao P. A. Dantas, Andre N. Costa, Diego Geraldo, Marcos R. O. A. Maximo",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "A Foundation Model for Policy In-Context Longitudinal Causal Effect Estimation",
+        "url": "http://arxiv.org/abs/2610.32863v1",
+        "summary": "Longitudinal causal effect estimation is complicated by time-varying confounding and treatment-confounder feedback loops. Existing methods generally require data-specific nuisance-model fitting, and many are tailored to prespecified treatment sequences or prediction horizons, leading to time-consuming computation at deployment. We introduce *Policy In-Context Longitudinal causal Effect estimation …",
+        "authors": "Wenxin Chen, Kyra Gan, Mingyu Lu, Zilin Jing",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
+        "url": "http://arxiv.org/abs/2610.32851v1",
+        "summary": "Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands of artifacts describing scope, journeys, rules and acceptance criteria. Recovery does not confer us…",
+        "authors": "Garima Agrawal, Prasun Das, Akshay Sarvade, Priyanka L",
+        "published": "2026-10-23",
+        "tags": [
+          "retrieval",
+          "agents"
+        ]
+      },
+      {
+        "title": "On Latency-Optimal Implementations of the Timestamp Object",
+        "url": "http://arxiv.org/abs/2610.32844v1",
+        "summary": "Timestamps are widely used in distributed algorithms to order operations. In this paper, we study the timestamp object (TS), which provides a single operation that returns strictly increasing integers. We ask two questions: What is the maximum resilience and the minimum latency of TS implementations in asynchronous message-passing systems, where latency is measured by worst-case message delay? We …",
+        "authors": "Aurojit Panda, Scott Shenker, Sam Toueg, Wen Zhang",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "HarnessMM: Recursive Self-Improvement for Harness Token Efficiency",
+        "url": "http://arxiv.org/abs/2610.32813v1",
+        "summary": "Agent harnesses repeatedly invoke reasoning after tool feedback, even when an earlier call has already fixed the next action. We introduce HarnessMM (Harness Minus Minus), a method for improving harness token efficiency through guarded decision reuse and recursive self-improvement (RSI). RSI iteratively refines companion harness configurations from training feedback, with validation selecting the …",
+        "authors": "Yuhua Jiang, Chang Xu, Feifei Gao, Li Zhao",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Quantum Cadence: Post-Quantum Consensus with Multiple Concurrent Proposers",
+        "url": "http://arxiv.org/abs/2610.32803v1",
+        "summary": "The consensus protocols of most high-performance blockchains use quorum certificates, which bundle the signatures of a quorum of validators. Signature schemes such as BLS can aggregate the signatures of a whole quorum into a single short signature, which keeps these certificates small. A large-scale quantum computer would break these schemes, and no post-quantum scheme with comparable aggregate si…",
+        "authors": "Mohammad Mussadiq Jalalzai, Tobias Klenze, Jovan Komatovic",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Multiplicative vs. Additive State Coupling in Learned Optimizer Schedules",
+        "url": "http://arxiv.org/abs/2610.32801v1",
+        "summary": "We learn schedules for a continuous penalty relaxation of MAX-CUT by backpropagating through an unrolled classical solver. A state-blind schedule generalizes to instances substantially larger than those used for training. A state-adaptive bilinear schedule also generalizes out of distribution, outperforming its untrained baseline across 15 seeds ($t=4.1$). By contrast, an additive ablation with id…",
+        "authors": "M. Harper Langston, Pierre-David Letourneau, Dalton Jones, Roland Memisevic",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Every Edge Needs a Quote: Building a Quote-Grounded Knowledge Graph of Healthcare Software Adoption with Language-Model Agents",
+        "url": "http://arxiv.org/abs/2610.32781v1",
+        "summary": "Hospitals regularly buy software that clinicians and patients depend on. Because these purchases are costly, hard to reverse and can affect patient care, buyers look for evidence of which peer institutions already use a product and which systems it connects to. This evidence is public but scattered across vendor websites, press releases and third-party pages. Language-model agents can now collect …",
+        "authors": "Juan Felipe Duran, Arthur Tobler, Martin Vallières",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "AI Alignment for Digital Democracy: Fairer Voters Representation against LLM Biases",
+        "url": "http://arxiv.org/abs/2610.32780v1",
+        "summary": "AI representation is emerging in digital democracy, assisting in voter emulation and decision-making. Large language models (LLMs) behave differently depending on the model, the prompt context, and the voter information they receive, representing some groups more accurately than others and potentially making the emulation unfair to certain groups. We investigate demographic biases in LLM-emulated …",
+        "authors": "Yi Qi, Srijoni Majumdar, Evangelos Pournaras",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+        "url": "http://arxiv.org/abs/2610.32770v1",
+        "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reason…",
+        "authors": "Leon Sick, Lukas Hoyer, Yannick Strümpler, Christian Reisswig",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
+        "url": "http://arxiv.org/abs/2610.32765v1",
+        "summary": "This paper studies interactions between clean-label poisoning attack and defense in vehicular networks using federated learning (FL). Basic Safety Message (BSM) classification for anomaly detection is modeled as a distributed learning problem over a vehicular network with dynamic topology. As a critical threat to FL, a feature-space clean-label attack is introduced, wherein benign samples are pert…",
+        "authors": "Yalin E. Sagduyu, Tugba Erpek, Nathan Stephenson, Mengran Xue",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+        "url": "http://arxiv.org/abs/2610.32755v1",
+        "summary": "Navigating complex, high-dimensional biological search spaces necessitates scalable physical and computational intelligence to explore beyond local optima through iterative self-play across ideation, experimentation, and automation. Translating experimental designs into reliable physical execution remains bottlenecked by static laboratory automation and unmodeled physical variability. To address t…",
+        "authors": "Yves Delley, John Coller, Zachary Cutts, Alexander Daryin",
+        "published": "2026-10-23",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+        "url": "http://arxiv.org/abs/2610.32752v1",
+        "summary": "LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations among facts rather than isolated semantic matches. Current memory pipelines remain vulnerable at two stages: indexing errors can fragment repeated entities or merge distinct ones, and online retrieval often treats initial simil…",
+        "authors": "Navyansh Mahla, Sashank Vandrangi",
+        "published": "2026-10-23",
+        "tags": [
+          "retrieval"
+        ]
+      },
+      {
+        "title": "Adaptive World-Models for Anomaly Recognition (AWARE): A Framework for Robot Dynamics Prediction and Introspection",
+        "url": "http://arxiv.org/abs/2610.32742v1",
+        "summary": "Unrecognized anomalies in critical infrastructure can rapidly cascade into catastrophic physical or operational failures. Current anomaly detection approaches often rely on direct access to the monitored system by utilizing onboard sensors, such as motor encoders, to detect anomalous states. However, legacy hardware often lacks these sensors, or strict security protocols may prohibit access altoge…",
+        "authors": "Luke Beddow, George Mavroghenis, Rodrigo Chacon Quesada, Kamil Dreczkowski",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Agentic Hazard Mapper: Emulating Expert Map-Making with AI Agents for Risk Communication",
+        "url": "http://arxiv.org/abs/2610.32738v1",
+        "summary": "Hazard maps are essential tools for public risk communication, preparedness, and evacuation planning, yet effective cartographic design is not always ensured due to limited access to cartographic expertise across local governments and communities. We present Agentic Hazard Mapper, a multi-agent system that automates hazard-map production by emulating professional cartographic workflows and iterati…",
+        "authors": "Sidi Wu, Lifeng Lin, Yizi Chen, Anna Yokokubo",
+        "published": "2026-10-23",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Internal Discrepancy for Contrastive Learning: Generalization Bounds and Downstream Behaviors",
+        "url": "http://arxiv.org/abs/2610.32729v1",
+        "summary": "Contrastive learning has emerged as a popular paradigm for training representation models. While prior studies pursue more practical and less restrictive assumptions to enhance theoretical understanding of contrastive learning, they essentially describe the interconnections among representations within the data or induced by the function class. To encapsulate these assumptions, we propose the meas…",
+        "authors": "Jialiang Wang, Qing Ma, Xiong Zhou, Gangfeng Hu",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "PlayerEmbed: Learning Behavioral Fingerprint Representations from Raw Input Sequences",
+        "url": "http://arxiv.org/abs/2610.32727v1",
+        "summary": "Raw player input sequences in video games contain fine-grained behavior, but are high-dimensional and noisy, which makes large-scale analytics challenging. To address this, we introduce PlayerEmbed, a framework that learns compact and discriminative player embeddings using deep metric learning. Our approach uses a hybrid CNN-LSTM encoder trained on raw input sequences from 1,000 players. We evalua…",
+        "authors": "Tobias Schneider, Lorenz Sparrenberg, Priya Tomar, Shahzeb Qamar",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Ontology-Guided Knowledge Graph Construction from Structured Metadata and Climate Science Publications",
+        "url": "http://arxiv.org/abs/2610.32725v1",
+        "summary": "The rapid expansion of scientific literature far outpaces the speed of manual curation, creating a fundamental bottleneck in extracting structured knowledge from scientific texts. To address this, we introduce an agentic, ontology-guided framework for knowledge graph (KG) construction. Our framework utilizes specialized agents for document understanding, information extraction, ontology conformanc…",
+        "authors": "Aayush Acharya, Qi Zhang, Eduard Dragut, Longin Jan Latecki",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Migration as a Steady-State Execution Primitive: A Runtime for Virtual Stationarity in Low-Earth Orbit",
+        "url": "http://arxiv.org/abs/2610.32720v1",
+        "summary": "Low Earth Orbit (LEO) satellite mega-constellations enable orbital edge computing for latency-critical geocentric applications, but satellite motion compresses line-of-sight communication windows to mere minutes. To maintain logical geographic proximity, a paradigm termed Virtual Stationarity (VS), applications must continuously migrate across passing satellites in the constellation. Traditional l…",
+        "authors": "Daniel Kleebinder, Alireza Furutanpey, Stefan Nastic",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE",
+        "url": "http://arxiv.org/abs/2610.32711v1",
+        "summary": "Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-sp…",
+        "authors": "Jie Ren, Ivy Peng",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "SP-Guide: Enhancing Aerial Vision-Language Navigation with Spatial Priors",
+        "url": "http://arxiv.org/abs/2610.32697v1",
+        "summary": "Aerial vision-language navigation (AVLN) requires a UAV to reach a language-described target from partial egocentric observations while reasoning over large outdoor scenes. Existing approaches typically fuse view-centered RGB observations and globally anchored history maps as generic visual embeddings, leaving cross-modal spatial alignment to be learned from sparse navigation supervision. We prese…",
+        "authors": "Haoxiang Tang, Dong Zhou, Shen Tan, Minxuan Jiang",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Tile-Based Decompression in Compiled GPU Engines",
+        "url": "http://arxiv.org/abs/2610.32695v1",
+        "summary": "Modern GPUs reach record analytical performance only when a query's working set fits within its GPU memory budget, and that budget is under growing pressure: GPUs are partitioned and shared, working sets are outgrowing high-bandwidth memory (HBM), and HBM is a fixed on-device resource whose per-dollar capacity has stagnated across generations. Lightweight compression can relieve this pressure by s…",
+        "authors": "Antonio Boffa, Ananya Gupta, Hamish Nicholson, Anastasia Ailamaki",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Conditional Neural Processes for Self-Supervised Goal Discovery in Action Imitation",
+        "url": "http://arxiv.org/abs/2610.32688v1",
+        "summary": "Inspired by infants' ability to learn novel tasks by imitating others, in this work we evaluate to what extent Conditional Neural Processes can autonomously learn representations of actions that are informative about their underlying goal. We show that the addition of an attention mechanism in the hidden space fosters the emergence of robust goal representations early on in the observation of an a…",
+        "authors": "Marco Gabriele Fedozzi, Yukie Nagai, Francesco Rea, Alessandra Sciutti",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "OpenDraco: A Platform for Engineering and Experimenting with Configurable Multi-Agent Architectures for Software Engineering",
+        "url": "http://arxiv.org/abs/2610.32686v1",
+        "summary": "Experimenting with LLM-based multi-agent systems (MAS) involves an iterative cycle of modeling configurations, executing and evaluating them, comparing results, and refining system designs. Existing approaches provide limited end-to-end support for this experimentation lifecycle. We present OpenDraco, an open-source platform that integrates these activities into a single workflow. OpenDraco repres…",
+        "authors": "Xiang Feng Ye Pan, Vincenzo De Martino, Matias Martinez",
+        "published": "2026-10-23",
+        "tags": []
+      }
+    ],
+    "github": [
+      {
+        "title": "rddmwmddr/android-ad-cleaner",
+        "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+        "summary": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+        "stars": 1559,
+        "language": "Python",
+        "published": "2026-10-24",
+        "tags": []
+      },
+      {
+        "title": "t3dotgg/tstack",
+        "url": "https://github.com/t3dotgg/tstack",
+        "summary": "The agent skills I use every day. Works with Claude Code and Codex.",
+        "stars": 903,
+        "language": "Python",
+        "published": "2026-10-24",
+        "tags": []
+      },
+      {
+        "title": "udhaykumarbala/cleanyourtv-app",
+        "url": "https://github.com/udhaykumarbala/cleanyourtv-app",
+        "summary": "A community-built phone app for Clean Your TV: clean up an Android TV from your phone. No laptop, no coding agent, nothing uninstalled.",
+        "stars": 684,
+        "language": "Kotlin",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "DenisSergeevitch/ex-ussr-kinship-research",
+        "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+        "summary": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+        "stars": 676,
+        "language": "Python",
+        "published": "2026-10-25",
+        "tags": []
+      },
+      {
+        "title": "dominikmartn/harp",
+        "url": "https://github.com/dominikmartn/harp",
+        "summary": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
+        "stars": 632,
+        "language": "Rust",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "lesnolie/Tigris",
+        "url": "https://github.com/lesnolie/Tigris",
+        "summary": "Tigris — tvOS 27 style launcher for Android TV: Liquid Glass dock, Top Shelf, glass Control Center, photo screensaver. Agent-installable.",
+        "stars": 494,
+        "language": "Kotlin",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "Alejandros17487/ai-jailbreaks",
+        "url": "https://github.com/Alejandros17487/ai-jailbreaks",
+        "summary": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.",
+        "stars": 489,
+        "language": "—",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "wangrongding/tv-fresh",
+        "url": "https://github.com/wangrongding/tv-fresh",
+        "summary": "tv-fresh 电视焕新：小米电视(MIUI TV)去广告/清理预装/换桌面/装代理与影视仓的 Agent Skill——免root可逆，含固件逆向实录与一键脚本",
+        "stars": 468,
+        "language": "Shell",
+        "published": "2026-10-24",
+        "tags": []
+      },
+      {
+        "title": "jss8649/quiet-tizen",
+        "url": "https://github.com/jss8649/quiet-tizen",
+        "summary": "Native Quiet Home launcher, reversible cleanup tools, and an agent-readable guide for the Samsung U8000F running Tizen 9.",
+        "stars": 396,
+        "language": "Python",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "actionow-ai/vvv",
+        "url": "https://github.com/actionow-ai/vvv",
+        "summary": "Build a video template once, reuse it across coding agents. Editable Remotion templates and an Agent Skill for Claude Code, Codex and 25+ agents.",
+        "stars": 389,
+        "language": "Python",
+        "published": "2026-10-22",
+        "tags": []
+      },
+      {
+        "title": "andyhuo520/digital-human-koubo",
+        "url": "https://github.com/andyhuo520/digital-human-koubo",
+        "summary": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …",
+        "stars": 383,
+        "language": "TypeScript",
+        "published": "2026-10-26",
+        "tags": []
+      },
+      {
+        "title": "routerhubSI/uncensored-ai-api",
+        "url": "https://github.com/routerhubSI/uncensored-ai-api",
+        "summary": "Uncensored AI API and models — one key for Claude, GPT, Gemini, Grok, DeepSeek, GLM and Qwen, with uncensored and abliterated variants where available. OpenAI- and Anthropic-compatible. Pay per token.",
+        "stars": 366,
+        "language": "—",
+        "published": "2026-10-24",
+        "tags": []
+      },
+      {
+        "title": "david-silvalab1993i0/Roblox-Aimbot-Smooth-Tracking-Auto-Aim-Script-2026",
+        "url": "https://github.com/david-silvalab1993i0/Roblox-Aimbot-Smooth-Tracking-Auto-Aim-Script-2026",
+        "summary": "High-performance Roblox aimbot with adaptive smooth tracking and precise auto aim. Fully configurable, works with most executors, clean modular structure. Easy setup for current Roblox version.",
+        "stars": 305,
+        "language": "Python",
+        "published": "2026-10-22",
+        "tags": []
+      },
+      {
+        "title": "hevnsnt/CVEngine",
+        "url": "https://github.com/hevnsnt/CVEngine",
+        "summary": "AI-first external attack surface assessment with continuous discovery, evidence-based vulnerability validation, and developer-agent MCP integration.",
+        "stars": 298,
+        "language": "Python",
+        "published": "2026-10-24",
+        "tags": []
+      },
+      {
+        "title": "free-cracks/Adobe-Acrobat-Pro",
+        "url": "https://github.com/free-cracks/Adobe-Acrobat-Pro",
+        "summary": "",
+        "stars": 287,
+        "language": "—",
+        "published": "2026-10-26",
+        "tags": []
+      },
+      {
+        "title": "qianshuixia/shrimpreel",
+        "url": "https://github.com/qianshuixia/shrimpreel",
+        "summary": "Open-source template for \"one photo → AI video that follows a viral template\" SaaS sites, one site per trending keyword. Cloudflare Workers + D1/R2/KV/Queues, TanStack Start + Hono, Google sign-in, credit packs (Waffo/Dodo), fal.ai video ge…",
+        "stars": 274,
+        "language": "TypeScript",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "lovisdotio/motion2code",
+        "url": "https://github.com/lovisdotio/motion2code",
+        "summary": "Skills for coding agents: rebuild a motion design video as looping SVG + GSAP code, checked frame by frame against the source",
+        "stars": 274,
+        "language": "HTML",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "huaxialucaicaizi/ai-startup-skills",
+        "url": "https://github.com/huaxialucaicaizi/ai-startup-skills",
+        "summary": "创业公司做 AI 产品的 7 步 Agent Skill 合集：验证 → BP → 政策 → 路演 → 获客 → 定价 → 注册。",
+        "stars": 264,
+        "language": "Python",
+        "published": "2026-10-22",
+        "tags": []
+      },
+      {
+        "title": "Charonyuu/whatsmyagentdoing",
+        "url": "https://github.com/Charonyuu/whatsmyagentdoing",
+        "summary": "See what every Claude Code and Codex agent on your machine is doing — live, in a little office.",
+        "stars": 247,
+        "language": "JavaScript",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "ZiChuanLan/agent-purge",
+        "url": "https://github.com/ZiChuanLan/agent-purge",
+        "summary": "One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.",
+        "stars": 221,
+        "language": "JavaScript",
+        "published": "2026-10-25",
+        "tags": []
+      },
+      {
+        "title": "7API/uncensored-ai-api",
+        "url": "https://github.com/7API/uncensored-ai-api",
+        "summary": "Uncensored AI API and models — one key for Claude, GPT, Gemini, Grok, DeepSeek, GLM and Kimi, with uncensored and abliterated variants where available. OpenAI- and Anthropic-compatible. Pay per token.",
+        "stars": 217,
+        "language": "—",
+        "published": "2026-10-22",
+        "tags": []
+      },
+      {
+        "title": "yaojingang/GEOInflow",
+        "url": "https://github.com/yaojingang/GEOInflow",
+        "summary": "Self-hosted web and AI crawler analytics for Generative Engine Optimization (GEO). Track visitors, AI search referrals, crawl logs, content coverage, and conversions. Jointly published by 猎看科技 · 北京日报社智源GEO. MIT licensed.",
+        "stars": 217,
+        "language": "TypeScript",
+        "published": "2026-10-26",
+        "tags": []
+      },
+      {
+        "title": "xingjian-bai/opal",
+        "url": "https://github.com/xingjian-bai/opal",
+        "summary": "OPAL: a reactive optimizer. A coding agent rewrites the optimizer while your model trains.",
+        "stars": 211,
+        "language": "Python",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "dk23lhl/termius-mcp",
+        "url": "https://github.com/dk23lhl/termius-mcp",
+        "summary": "Your Termius sessions, ready for AI. Read terminals, run commands, and track native SFTP uploads through MCP. Community adapter for macOS Termius 9.38.1.",
+        "stars": 188,
+        "language": "Python",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "Cattmonkey/ChaosIntelligence",
+        "url": "https://github.com/Cattmonkey/ChaosIntelligence",
+        "summary": "把智能体当函数，把想法写成程序。Agent-native functional language with a CLI, Web IDE, goal-driven bots and live UI. Source-available; no AI training.",
+        "stars": 181,
+        "language": "Python",
+        "published": "2026-10-23",
+        "tags": []
+      }
+    ],
+    "hackernews": [
+      {
+        "title": "Sharing AI progress in mathematics",
+        "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+        "summary": "",
+        "points": 1363,
+        "comments": 1539,
+        "hn_url": "https://news.ycombinator.com/item?id=49984923",
+        "published": "2026-10-06",
+        "top_comments": [
+          {
+            "author": "Anamon",
+            "text": "It may be novel, but I agree with parent that it's mostly in the convex hull of previous knowledge. I like the term remix to describe that! Progress and truly novel things often come from \"out of the box\", and we know how quickly LLM output quality degrades when it leaves the space spanned by its training data. So I wo…"
+          },
+          {
+            "author": "yunwal",
+            "text": "Unless AI companies are willing to take on liability for bad decisions the bot makes some human who can be promoted or fired will need to roughly understand risks and tradeoffs of what ai does"
+          },
+          {
+            "author": "yunwal",
+            "text": "This is just not how math has ever worked and seems like a completely incorrect lens to apply to this situation."
+          },
+          {
+            "author": "feanaro",
+            "text": "I was responding to a comment from a person claiming this is not an example where the \"intention/substance of the work might exist somewhere buried within a wall of impenetrable LLM text\". I am saying this is in fact the case, given human experts almost universally agree that the papers are badly written, with inscruta…"
+          },
+          {
+            "author": "achierius",
+            "text": "Anthropic and OpenAI are American companies. Why would you be so surprised that discussion on them considers the plight of Americans? Do you think poor Americans don't deserve healthcare? > the problems of your healthcare insurance system are not a worldwide phenomenon That's great for Europe! But unfortunately people …"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "The gap in shared understanding of LLM capability is widening",
+        "url": "https://twitter.com/karpathy/status/2109361546505966046",
+        "summary": "",
+        "points": 730,
+        "comments": 1074,
+        "hn_url": "https://news.ycombinator.com/item?id=50047422",
+        "published": "2026-10-11",
+        "top_comments": [
+          {
+            "author": "robswc",
+            "text": "Sorry for the late reply. If I look in the \"Library\" at images I have generated, scroll down a bit and click the image, all the images turn black/empty, that image then shifts to the top of the page. Putting it at the top is fine, but it should be done _after_ one closes out of the library."
+          },
+          {
+            "author": "ggleason",
+            "text": "It's really incredible. We decided to see if we could write a Tokio-like library in Lean and were able to do it in a week with performance similar to Node 22. There is really no reason not to use a theorem prover now instead of a functional programming language, and soon it will be better than most languages. All that …"
+          },
+          {
+            "author": "jrowen",
+            "text": "There is a truism in organizations that 1 engineer can do in 1 month, what 8 engineers can do in 8 months. The mythical man-month is an interesting point. I think there are limitations or hurdles to human collaboration, in that sense, that may not exist for them. Wildly different experience levels, knowledge levels, em…"
+          },
+          {
+            "author": "moezd",
+            "text": "Noone is mad here, you're fighting with shadows. Go touch some grass. If you want to do science, get accepted in a research institute instead of schooling people over your made up standards, and get me an alternative story to argue against. You are still attacking the character and assuming that you have the authority …"
+          },
+          {
+            "author": "cman1444",
+            "text": "https://www.merriam-webster.com/dictionary/research 1 : studious inquiry or examination especially : investigation or experimentation aimed at the discovery and interpretation of facts, revision of accepted theories or laws in the light of new facts, or practical application of such new or revised theories or laws 2 : …"
+          },
+          {
+            "author": "hardbass",
+            "text": "What is the part in a human being that is not molecules and their physical interactions?"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+        "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+        "summary": "",
+        "points": 423,
+        "comments": 850,
+        "hn_url": "https://news.ycombinator.com/item?id=49946228",
+        "published": "2026-10-03",
+        "top_comments": [
+          {
+            "author": "mitthrowaway2",
+            "text": "Did, say, Yoshua Bengio claim that we'd have AGI by October 2026? I must have missed it."
+          },
+          {
+            "author": "LoganDark",
+            "text": "Cause and effect is one property of physics. I'm not looking for \"physics the field of mathematics\" but rather \"physics the interaction of forces\""
+          },
+          {
+            "author": "mordymoop",
+            "text": "Your comment prompted me to check what kinds of definitions of AGI were actually in the air back in the mid 2010s. A lot of people conflate AGI with superintelligence. I'm not accusing you of doing that, but it's a common enough mistake that I wanted to assemble these quotes as a record that can be referred to. Here ar…"
+          },
+          {
+            "author": "calf",
+            "text": "My statement is concise and says in one sentence what is wrong with the two paragraphs you wrote. Less being more."
+          },
+          {
+            "author": "noname120",
+            "text": "What makes you think it’s “BS of the highest order”?"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+        "url": "https://news.ycombinator.com/item?id=50151036",
+        "summary": "",
+        "points": 621,
+        "comments": 762,
+        "hn_url": "https://news.ycombinator.com/item?id=50151036",
+        "published": "2026-10-19",
+        "top_comments": [
+          {
+            "author": "ndriscoll",
+            "text": "I'm actually doing quite well economically and am generally quite happy with my career!"
+          },
+          {
+            "author": "g-b-r",
+            "text": "Oh sure, absolutely. I hope you're not a real engineer, or at least that you don't really think what you've been saying."
+          },
+          {
+            "author": "JodieBenitez",
+            "text": "Well, that's pure FUD. Not much to add here. Good luck to you though."
+          },
+          {
+            "author": "g-b-r",
+            "text": "No, they boil down to the idea that their worst output is tremendously worse and more dangerous than the worst output of the average (honest) engineer."
+          },
+          {
+            "author": "JodieBenitez",
+            "text": "> Libraries are (or used to be) written by humans, Jodie, which if honest don't add obviously devastating code. All your points so far boil down to the idea that the average LLM output is worse than the average engineer output. Sorry, it's not."
+          },
+          {
+            "author": "groundzeros2015",
+            "text": "Sour grapes. > sit through endless woke sexual harassment videos where you are taught that the white man is the source of all evil, In big tech I had fewer trainings than any other org in my career, because they knew time was money."
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "No signs of AI payoff outside the tech sector",
+        "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+        "summary": "",
+        "points": 629,
+        "comments": 661,
+        "hn_url": "https://news.ycombinator.com/item?id=50224463",
+        "published": "2026-10-24",
+        "top_comments": [
+          {
+            "author": "sam_lowry_",
+            "text": "I regularly see awfully wrong automatic translations on youtube in all kinds of videos."
+          },
+          {
+            "author": "sailfast",
+            "text": "Do you mean the FTC? Typically the SEC is just concerned with trading regulation which would not prevent a merger. Also I no longer assume any of these agencies will enforce their charters if the executive is sufficiently captured by companies as to allow mergers. For evidence I’d just gesture around at the latest batc…"
+          },
+          {
+            "author": "byko3y",
+            "text": "Your arguments are actually confirmed by many researches: people with low competence in some area solve the problem with AI significantly faster than deducing the solution themselves. However, there is also a catch: people relying on LLM too much eventually fall behind in learning. However, often time people start talk…"
+          },
+          {
+            "author": "byko3y",
+            "text": ">Debugging can be done by writing/deleting/modifying code (e.g., write a test and run it, or add log statements, or remove a line and re-run the program, etc.), or by running shell tools We can end with things like \"drinking cofee is an essential part of debugging for me\". Debugging is an integration work, just like ar…"
+          },
+          {
+            "author": "XIII-2",
+            "text": "AI payoff in the tech sector so far is the loss of thousands of jobs, the disappearence of entry-level positions, a flood of low-quality software and more cybersecurity risks. Thus far AI has been great at extracting value from every area its introduced in, but terrible at actually generating value."
+          },
+          {
+            "author": "mrdw",
+            "text": "I currently work in E-commerce, local online marketplace in Kazakhstan. I scraped all millions of goods in the marketplace, then analyzed top 30k goods with AI. Goal here to find it's supplier in China accurately and estimate weight, similarity, etc. That index gave me huge competitive advantage compared to other selle…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Every AI model has the same \"controversial\" take on humans",
+        "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+        "summary": "",
+        "points": 658,
+        "comments": 640,
+        "hn_url": "https://news.ycombinator.com/item?id=50197313",
+        "published": "2026-10-22",
+        "top_comments": [
+          {
+            "author": "Otterly99",
+            "text": "I just commented the same thing about a magic cake bush my dog found. I am deligthed to see it is a universal dog (and human?) thing."
+          },
+          {
+            "author": "Otterly99",
+            "text": "My dog had a similar thing with a bush. One day, she found a whole cake under a bush and brought it to us (I'm talking a cake big enough to feed 8 persons). From that day forward, she would intensely forage under the \"cake bush\" every time we passed it."
+          },
+          {
+            "author": "Valakas_",
+            "text": "I don't know why people are even bothering to reply to a one sentence rage baiting comment. Let that useless comment fade into oblivion. It makes no sense other than him trying to create discussion."
+          },
+          {
+            "author": "johnnyanmac",
+            "text": ">Have you ever contemplated that the \"racist, xenophobic and homophobic\" behaviour is what is keeping those communities and used to keep other communities homogenous and thereby ensured high-trust? Not much, no. A small community that only trusts itself and pushes any out-group away (regardless of disposition) tends to…"
+          },
+          {
+            "author": "marcus_holmes",
+            "text": "As I understand it, the back-propogation of the weights adjustment involves comparing the result they got with the \"correct\" result from the data. The problem with data outside of training is that there's no \"correct\" result - nothing to judge against, so no method of back-propogating the weights corrections. But I cou…"
+          },
+          {
+            "author": "marcus_holmes",
+            "text": "I was addressing the other half of the initial statement: > Nothing about the conception of knowledge as \"justified true belief\" implies that machines can't accrue knowledge. Even if the LLMs could adjust their weights in response to knowledge that they encountered post-training, they would need to make judgements abou…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      },
+      {
+        "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+        "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+        "summary": "",
+        "points": 951,
+        "comments": 626,
+        "hn_url": "https://news.ycombinator.com/item?id=50091788",
+        "published": "2026-10-14",
+        "top_comments": [
+          {
+            "author": "Dylan16807",
+            "text": "You would generally not use TCP, yeah. If you want a simple version, send UDP packets one way or use a plain old serial port with only one wire connected (plus ground)."
+          },
+          {
+            "author": "strbean",
+            "text": "> Somebody hacked into that pilates studio, and it wasn't an inanimate object, because that is just silly. I don't agree with this premise. If a bit flip creates a worm, is God hacking the affected computers? Why can't an inanimate object hack a computer?"
+          },
+          {
+            "author": "strbean",
+            "text": "There's a big difference in the advertised functionality of the two tools. A closer analogy would be if you turned on your blinker and your car autonomously decided to shoot the card in your blind spot with a rocket. The name \"AI Assistant\" not only does not indicate that it will spontaneously break the law to break in…"
+          },
+          {
+            "author": "strbean",
+            "text": "The poster I initially replied to at least failed to acknowledge that it may be the tool itself malfunctioning, and therefore the liability of the AI company. The implication of their post was that it is always the end user who should be liable."
+          },
+          {
+            "author": "busssard",
+            "text": "\"if you think compliance is expensive, try non-compliance\""
+          },
+          {
+            "author": "lukewarm707",
+            "text": "We are using different definitions of 'self authoring'. I use deontological definitions of objects and persons. According to Kant a person has the capacity to legislate their own morality, so they are an end in themselves. The freedom to author themselves and their own thoughts, expresses their personhood, an end in it…"
+          }
+        ],
+        "discussion_summary": "",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "AI is a tool and using it well takes skill",
+        "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+        "summary": "",
+        "points": 807,
+        "comments": 607,
+        "hn_url": "https://news.ycombinator.com/item?id=50063427",
+        "published": "2026-10-12",
+        "top_comments": [
+          {
+            "author": "ssl-3",
+            "text": "You weren't rude. It's just a tiresome thing to keep hearing. For my entire lifetime so far, it seems like there's always been something that will surely melt the brains of children into smooth useless calcified lumps. Comic books, sex ed, junk food, lazy fiction, plan B, horror movies, pocket calculators, television, …"
+          },
+          {
+            "author": "GeorgeWBasic",
+            "text": "My apologies if I was rude. But I still stand by my statement: this technology is unlike anything that came before it and the effects on the youth are mostly bad. We will probably have to agree to disagree: at least until it becomes obvious who's correct."
+          },
+          {
+            "author": "solarpunk_enthu",
+            "text": "I am very pro walkable cities. But imagine walking from SF to LA for business purposes."
+          },
+          {
+            "author": "adamqureshi",
+            "text": "A gun is a tool too. Now the problem is of course? guns do not kill people. People who use guns do. The crux of the problem to me it seems is. How we use the tool? i am NOT a believer in tge A.I doomsday ala AYN RAND. I think its just HYPE. A.I is built by humans. Humans have an evolutionary motive. A.I does not. A.I d…"
+          },
+          {
+            "author": "Igrom",
+            "text": "Can you share more about how you've received these recommendations? Did you purposefully ask Claude to find books on a topic, were they brought up as part of a generic \"help me do the research on this topic\" prompt? Also, fiction or non-fiction?"
+          },
+          {
+            "author": "nocman",
+            "text": "A person studying photography is infinitely more sophisticated than a machine training on photographic information. Photographic art is much more than just taking pictures."
+          }
+        ],
+        "discussion_summary": "",
+        "tags": []
+      }
+    ],
+    "blogs": [
+      {
+        "title": "Automate medical coding with Step Functions and Amazon Bedrock AgentCore",
+        "url": "https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/",
+        "summary": "Learn how to combine deterministic orchestration with bounded agentic reasoning using AWS Step Functions and the Amazon Bedrock AgentCore harness. This medical coding workflow escalates cheapest-first: a safety block-list, then exact matching, then an AI agent only for terms that need judgment, keeping every routing decision auditable.",
+        "blog": "AWS Architecture Blog",
+        "published": "2026-10-21",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+        "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4",
+        "summary": "",
+        "blog": "Netflix TechBlog",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
+        "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4",
+        "summary": "",
+        "blog": "Netflix TechBlog",
+        "published": "2026-10-22",
+        "tags": []
+      },
+      {
+        "title": "Origin Range Requests: Serving large files without range-request tuning",
+        "url": "https://blog.cloudflare.com/origin-range-requests/",
+        "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Bringing post-quantum cryptography to geographically fenced key management",
+        "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+        "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-23",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+        "url": "https://blog.cloudflare.com/k-isms/",
+        "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-22",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Introducing full transaction detection for Cloudflare WAF",
+        "url": "https://blog.cloudflare.com/full-transaction-waf/",
+        "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "Cloudflare deploys protections against php2shell vulnerability",
+        "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+        "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+        "url": "https://blog.cloudflare.com/webmcp-commerce/",
+        "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-21",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+        "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+        "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should do next.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "Introducing tsrs: A port of TypeScript to Rust",
+        "url": "https://blog.cloudflare.com/typescript-rust-port/",
+        "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-20",
+        "tags": []
+      },
+      {
+        "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+        "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+        "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-19",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Introducing Clairic, a new System One class of extraction models",
+        "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+        "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+        "blog": "Cloudflare Blog",
+        "published": "2026-10-19",
+        "tags": []
+      },
+      {
+        "title": "Fragments: October 21",
+        "url": "https://martinfowler.com/fragments/2026-10-21.html",
+        "summary": "Gergely Orosz is frustrated at those that entered his explicitly “No AI” essay competition and used AI. He goes on to say: When I start to suspect some part is AI about someone I don’t know: how can I tell how much of it is? And how much time and effort do I want to invest to figure out? I fear most people do not realize this last part: that when it takes time and effort from others to figure out …",
+        "blog": "Martin Fowler",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "Article: The Evolution of Agentic Harnesses: From Chains to Graph to Code",
+        "url": "https://www.infoq.com/articles/agentic-ai-architecture-harness-evolution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Agentic LLM systems have moved from linear prompt chains to graph-based workflows and, more recently, code-executing harnesses. Chains are simple but fragile, graphs add branching, retries, and validation, and code harnesses verify outputs through execution. The article advises validating model outputs and choosing the least complex design that meets reliability, speed, and cost needs. By Karthik …",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-26",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Cloudflare’s Auto Router Rates Each Request for Stakes, from the Most Recent Turns",
+        "url": "https://www.infoq.com/news/2026/10/cloudflare-auto-router/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Cloudflare has released Auto Router in public beta through AI Gateway, picking a model per request from a classifier that scores complexity, ambiguity, stakes and context dependence. Cloudflare’s own benchmark puts it ten points below Claude Opus 5.5 on success rate at a third of the cost, and practitioners have questioned how stakes survive a long agent session. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-26",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "PHP Patches Two Critical RCE Flaws That Were Already Under Attack",
+        "url": "https://www.infoq.com/news/2026/10/php-critical-rce-patches/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "PHP released 8.5.12, 8.4.27, 8.3.36, and 8.2.35 to fix two critical vulnerabilities allowing unauthenticated remote code execution. Amazon recorded an exploitation attempt four days before the patches shipped, and operators spent the day working out whether they ran PHP, where to get the package, and how to tell it had landed. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-25",
+        "tags": []
+      },
+      {
+        "title": "PingCAP Breach Exposes Customer Records and Source Code",
+        "url": "https://www.infoq.com/news/2026/10/pingcap-cloud-data-breach/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "PingCAP recently confirmed unauthorized access to its internal systems and the theft of source code and customer-related data. The attacker, cyber extortion group FulcrumSec, claimed to have stolen 10.6 TB of data, including TiDB Cloud control-plane records, customer SQL statements, API keys, connection logs, billing information, internal documents, and 413 private source-code repositories. By Ren…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-25",
+        "tags": []
+      },
+      {
+        "title": "Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM",
+        "url": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Google has made Data Agent Kit generally available, a free set of MCP tools and 37 open-source skills that connect coding agents to more than fifteen Google Data Cloud services. Two kinds of guardrail ship with it, and practitioners need to tell them apart: one is a skill asking the agent to stop, the other an IAM deny policy that refuses the call. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-24",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing",
+        "url": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Cloudflare recently documented how it reduced the memory footprint of its internal load-balancing service by more than 100 TB by optimizing the Rust implementation of consistent hashing in pingora-ketama. The changes compacted hash-ring entries and used statistical analysis of hash distribution and collision rates to reduce the number of hashes per backend by about 90%. By Renato Losio",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-24",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "CSIRO Uses Serverless Architecture to Query 100x More Genomic Variants on AWS",
+        "url": "https://www.infoq.com/news/2026/10/csiro-serverless-genomic-variant/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "CSIRO has developed Serverless Beacon, a serverless architecture for querying genomic variants without copying VCF files into a central database. The system combines Amazon S3, Lambda, Athena and DynamoDB, using metadata indexes and HTTP byte range requests to query compressed genomic regions. Tests reported 1.52 second average latency for 10,000 base pair queries. By Leela Kumili",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "AWS Introduces Lambda Web Functions for Node.js Applications",
+        "url": "https://www.infoq.com/news/2026/10/aws-lambda-web-functions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "AWS recently introduced Lambda Web Functions, allowing developers to run Node.js web applications using frameworks such as Express and Hono directly on Lambda, with support for concurrent requests and response streaming. By Renato Losio",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Article: Multi-Cloud FinOps: An Engineering Framework for Cross-Cloud Cost Optimization",
+        "url": "https://www.infoq.com/articles/multi-cloud-finops-cost-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Multi-cloud flexibility comes with hidden egress costs driven by service placement and communication patterns. This article applies Backend FinOps to cross-cloud architecture, covering cost visibility through FOCUS, workload placement, synchronization models, and CI/CD-integrated cost governance. A controlled experiment shows architecture changes saved far more than rate negotiation alone. By Vive…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-23",
+        "tags": []
+      },
+      {
+        "title": "Presentation: Move Fast, Don’t Break Trust: Shipping Constantly with Humans and Beyond",
+        "url": "https://www.infoq.com/presentations/monzo-microservices-devex/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Suhail Patel discusses how Monzo structures its software engineering organization and technical stack to ship safely hundreds of times a day. He shares insights into opinionated microservice abstractions, tenancy-based staging, static analysis checks, continuous profiling, demonstrating how a strong internal platform enables engineers and LLMs to iterate rapidly without sacrificing reliability. By…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-23",
+        "tags": [
+          "warstory"
+        ]
+      },
+      {
+        "title": "Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks",
+        "url": "https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "A recent Harvard study of 718 firms, using the Jellyfish analytics platform, finds that although AI coding assistants and agents increase code volume, this does not translate into a corresponding increase in completed work, partly because AI-generated code increases the workload in later stages of development, particularly code review. By Sergio De Simone",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-22",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Presentation: Actors for Agents: Patterns for Production AI",
+        "url": "https://www.infoq.com/presentations/actors-for-production-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Manju Rajashekhar explains how the actor model solves the complex runtime challenges of production AI agents. By treating agents as distributed systems, he discusses state ownership, message passing, write-through state, and supervision boundaries to manage failures, continuations, and mutable execution graphs, moving agentic workflows beyond fragile demos to resilient architecture. By Manju Rajas…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-22",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Article: AI Changes the Data Interface, Not the Query Engine",
+        "url": "https://www.infoq.com/articles/ai-changes-data-interface/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "This article presents a disaster-recovery analytics workflow in which an AI agent generates constrained SQL or Python, DuckDB computes reproducible facts from Parquet, and the agent interprets the results. It explains the determinism split, replayable analysis, and four signals for deciding when an embedded engine is sufficient or a managed lakehouse is justified. By Peihao Yuan",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-22",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "Developer behind the AI-Built Adobe Clones Says They Are “Not Anywhere Close to Ready\"",
+        "url": "https://www.infoq.com/news/2026/10/photocraft-adobe-parity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "A developer used Claude Opus 5.5 to build open-source replacements for seven Adobe applications, promoted them across Reddit with a projection of roughly 100% parity within a month, then told Hacker News the project was not anywhere close to ready. Its own roadmap puts it at 45% ready for real work and 2,300 to 4,100 agent-hours from full parity. By Steef-Jan Wiggers",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-22",
+        "tags": [
+          "agents"
+        ]
+      },
+      {
+        "title": "eMudhra Intermediate CA Compromise",
+        "url": "https://www.infoq.com/news/2026/10/emudhra-ca-compromise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+        "summary": "Private keys for eight eMudhra intermediate CA certificates have been compromised, allowing attackers to forge certificates for any site. The keys were revealed due to low entropy, not through a known breach. Browsers blocked them using revocation lists, but other software had to remove the emSign ECC G3 root. Unpatched systems remain exposed to forged certificates, including client auth and mTLS.…",
+        "blog": "InfoQ Architecture & Design",
+        "published": "2026-10-21",
+        "tags": []
+      },
+      {
+        "title": "The bridge to agent-scale Git infrastructure",
+        "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+        "blog": "The GitHub Blog (Engineering)",
+        "published": "2026-10-21",
+        "tags": [
+          "agents",
+          "warstory"
+        ]
+      },
+      {
+        "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
+        "url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
+        "summary": "As fintech products become increasingly capable, the infrastructure behind them fades into the background. Three trends from Money20/20 show how stablecoins, agents, and always-on money are changing financial services.",
+        "blog": "Stripe Engineering",
+        "published": "2026-10-22",
+        "tags": [
+          "agents"
+        ]
+      }
+    ]
+  }
+}
